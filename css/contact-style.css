@@ -1,0 +1,76 @@
+.common-color{
+    color: #465ea1;
+}
+.bg-common-color{
+    background-color: #465ea1;
+    border: none;
+    border-radius: 0 !important;
+}
+.bg-common-color:hover{
+    background-color: black;
+    border: none;
+    
+}
+
+.contact_text{
+    color: #465ea1;
+}
+
+.l-side-container{
+    /* background-color: #FF6A00; */
+    width: 30%;
+}
+ .r-side-container{
+    /* background-color: #FF6A00; */
+    width: 69%;
+    height: auto;
+ }
+ .main-form-Container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+ }
+ .inp-Text-Size{
+    font-size: 1.75rem;
+ }
+ .inp-check-box{
+    align-items: center;
+
+ }
+ .Search-Bar-Nav{
+    height: 10rem;
+    background-color: #465ea1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   flex-wrap: wrap;
+   min-height: 13rem;
+  
+    
+  }
+  .Nav-description{
+    color: #ffff;
+  }
+
+  /* for small screen  */
+    /* Maintain fixed height for map on all screen sizes */
+    .r-side-container {
+        height: 400px;
+      }
+    
+      @media (max-width: 767.98px) {
+        /* Stack children vertically and add spacing on small screens */
+        .main-Container-Contact {
+          flex-direction: column !important;
+        }
+    
+        .l-side-container,
+        .r-side-container {
+          width: 100% !important;
+          margin-top: 1rem;
+        }
+    
+        .r-side-container {
+          height: 300px; /* optional: slightly smaller map on small screens */
+        }
+      }

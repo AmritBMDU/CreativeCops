@@ -1,0 +1,149 @@
+body {
+    background-color: white;
+    border-color: #465ea1;
+    color: #465ea1;
+}
+
+.bg-color {
+    background-color: #f25c05;
+}
+
+.product-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.color-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid #465ea1;
+    cursor: pointer;
+}
+
+.color-dot.active {
+    border: 2px solid #465ea1;
+}
+
+.thumbnail-img {
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #465ea1;
+}
+
+.main-img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border: 1px solid #465ea1;
+}
+
+.thumbnail-img.active-thumb {
+    border: 2px solid #465ea1;
+}
+
+.product-card {
+    border: 1px solid #465ea1;
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+    padding: 15px;
+    max-width: 320px;
+}
+
+.product-card img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #465ea1;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #465ea1;
+}
+
+.price-original {
+    text-decoration: line-through;
+    color: #ccc;
+    margin-left: 5px;
+}
+
+.in-stock {
+    color: #465ea1;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.card-footer-btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card-footer-btns button {
+    flex: 1;
+    border-color: #465ea1;
+    color: #465ea1;
+}
+
+.icon-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    border: 1px solid #465ea1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #465ea1;
+}
+
+.focus-orange:focus {
+    color: #f25c05 !important;
+}
+
+.nav-link {
+    background-color: transparent !important;
+    color: #465ea1 !important;
+}
+
+.nav-link.active {
+    background-color: #465ea1 !important;
+    color: white !important;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px;
+}
+
+.custom-card {
+    display: inline-block;
+    width: 300px;
+    margin-right: 10px;
+    vertical-align: top;
+    border: 1px solid #465ea1;
+}
