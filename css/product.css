@@ -1,0 +1,160 @@
+.common-color {
+  color: #465ea1;
+}
+
+.common-colorbg {
+  background-color: #465ea1;
+}
+
+.prod-hight {
+  height: 5rem;
+  padding: 1.5rem;
+  font-weight: 500;
+}
+
+.left-side-layout p:hover {
+  color: #465ea1;
+  cursor: pointer;
+}
+
+.left-side-layout {
+  /* background-color: #ff6a00; */
+  margin-bottom: 50%;
+}
+
+.form-check {
+  padding-left: 3rem;
+  align-items: center;
+  height: 2.5rem;
+
+}
+
+.filter-color {
+  /* background-color: #ff6a00; */
+  padding-bottom: 2rem;
+
+}
+
+.filter-color>.colors {
+  margin: 0 1.5rem;
+
+}
+
+/* Product  */
+.btn-custom {
+  border-radius: 0 !important;
+  background-color: #465ea1;
+}
+
+.font-w-off {
+  font-weight: 500;
+}
+
+/* <style> */
+.bg-image {
+  background-image: url('../AssetImage/bg-5.jpg');
+  /* Replace with your actual image URL */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  /* Adjust height as needed */
+  position: relative;
+}
+
+.bg-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  /* Optional: dark overlay */
+  z-index: 1;
+}
+
+.banner>* {
+  position: relative;
+  z-index: 2;
+}
+
+/* </style> */
+
+
+
+
+
+/* Flexbox for Left Layout */
+.left-side-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Flexbox Layout for Column Items */
+.col {
+  flex: 1;
+}
+
+/* Adjustments for Large Screens */
+@media (min-width: 992px) {
+  .left-side-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col {
+    flex: 1;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .left-side-layout {
+    flex: 1 1 100%;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .prod-hight {
+    font-size: 1.2rem;
+  }
+
+  .filter-box input[type="range"] {
+    width: 100%;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+
+
+/* Nav Bar Button  */
+.Search-Bar-Nav {
+  height: 10rem;
+  background-color: #465ea1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 13rem;
+
+
+}
+
+.Nav-description {
+  color: #ffff;
+}
+
+.card:hover {
+  border-color: #465ea1;
+}
+
+.nextBtnHover:hover {
+  background-color: #465ea1;
+  color: white;
+}

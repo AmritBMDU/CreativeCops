@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="/stylesheet/products.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -114,7 +116,7 @@
                     <ul class="navbar-nav d-flex flex-row align-items-center gap-3">
                         <li class="nav-item">
                             <div class="dropdown-center">
-                                <a class="nav-link" href="/" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="nav-icon-container">
                                         <div>HOME</div>
                                     </div>
@@ -165,8 +167,224 @@
 
         <!-- End  -->
     </header>
-    <!-- main content -->
-    <div class="container mt-4" id="sectionContainer"></div>
+    <!-- Header Section -->
+    <div data-include="/components/Header.html"></div>
+
+    <div class="container my-5">
+        <div class="row product-box">
+            <!-- Image Carousel -->
+            <div class="col-md-6">
+                <img id="mainProductImg" src="AssetImage\product1.png" class="img-fluid w-100 main-img mb-3 border"
+                    style="border-color: #465ea1;" alt="Main Product" />
+                <div class="d-flex overflow-auto gap-2 flex-nowrap" id="thumbnails">
+                    <img src="AssetImage\product1.png" class="thumbnail-img border active-thumb"
+                        style="height: 120px; width: 120px; border-color: #465ea1;" onclick="changeMainImage(this)" />
+                    <img src="AssetImage\product2.png" class="thumbnail-img"
+                        style="height: 120px; width: 120px; border-color: #465ea1;" onclick="changeMainImage(this)" />
+                    <img src="AssetImage\product3.png" class="thumbnail-img"
+                        style="height: 120px; width: 120px; border-color: #465ea1;" onclick="changeMainImage(this)" />
+                    <img src="AssetImage\product4.jpg" class="thumbnail-img"
+                        style="height: 120px; width: 120px; border-color: #465ea1;" onclick="changeMainImage(this)" />
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="col-md-6" style="text-align: start;">
+                <h4 style="color: #465ea1;">Cordless Drill Professional Combo Drill And Screwdriver</h4>
+                <div class="d-flex align-items-center mb-2">
+                    <span class="text-warning" style="color: #465ea1;">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    <span class="ms-2" style="color: #465ea1;">4 Reviews</span>
+                </div>
+                <h5 style="color: #465ea1;">$119.00 <small
+                        class="text-muted text-decoration-line-through">$219.00</small></h5>
+                <p class="text-success" style="color: #465ea1;">In Stock (8 Items)</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <ul class="list-unstyled" style="color: #465ea1;">
+                    <li><strong>SKU:</strong> 001</li>
+                    <li><strong>Availability:</strong> Available</li>
+                    <li><strong>Brand:</strong> Creative Cops</li>
+                    <li><strong>Categories:</strong> Power Drill</li>
+                </ul>
+                <div class="mb-3" style="color: #465ea1;">
+                    <strong>Color:</strong>
+                    <span class="color-dot bg-primary active" onclick="selectColor(this)"
+                        style="border: 2px solid #465ea1;"></span>
+                    <span class="color-dot bg-success" onclick="selectColor(this)"
+                        style="border: 2px solid #465ea1;"></span>
+                    <span class="color-dot bg-danger" onclick="selectColor(this)"
+                        style="border: 2px solid #465ea1;"></span>
+                    <span class="color-dot bg-info" onclick="selectColor(this)"
+                        style="border: 2px solid #465ea1;"></span>
+                    <span class="color-dot bg-warning" onclick="selectColor(this)"
+                        style="border: 2px solid #465ea1;"></span>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <button class="btn" style="border: 1px solid #465ea1; color: #465ea1;"
+                        onclick="changeQty(-1)">-</button>
+                    <input type="text" id="qty" value="1" class="form-control mx-2"
+                        style="width: 60px; text-align: center; border-color: #465ea1;" readonly />
+                    <button class="btn" style="border: 1px solid #465ea1; color: #465ea1;"
+                        onclick="changeQty(1)">+</button>
+                </div>
+                <div class="mb-3">
+                    <button class="btn" style="background-color: #465ea1; color: white;">Add To Cart</button>
+                    <button class="btn btn-outline-secondary ms-2"
+                        style="border-color: #465ea1; color: #465ea1;">&#9825; Wishlist</button>
+                </div>
+                <div style="color: #465ea1;">
+                    <strong>Share:</strong>
+                    <i class="bi bi-facebook mx-1"></i>
+                    <i class="bi bi-instagram mx-1"></i>
+                    <i class="bi bi-linkedin mx-1"></i>
+                    <i class="bi bi-twitter mx-1"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <ul class="nav nav-pills gap mb-4" id="tabMenu">
+            <li class="nav-item">
+                <a class="nav-link text-black fs-6 fs-sm-4" href="#" onclick="showTab(event, 'desc')"
+                    style="color: #465ea1;">Description</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black fs-6 fs-sm-4" href="#" onclick="showTab(event, 'add')"
+                    style="color: #465ea1;">Additional_Information</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black fs-6 fs-sm-4" href="#" onclick="showTab(event, 'info')"
+                    style="color: #465ea1;">Reviews</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="desc">
+                <div class="p-4 border rounded bg-white shadow-sm" style="border-color: #465ea1;">
+                    <h5 class="fw-bold mb-3" style="color: #465ea1;">Product Description</h5>
+                    <p class="text-muted">
+                        Design inspiration lorem ipsum dolor sit amet...
+                    </p>
+                    <h5 class="fw-bold mt-4 mb-3" style="color: #465ea1;">Specification</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><strong>Model:</strong> 001</li>
+                        <li class="mb-2"><strong>Battery Chemistry:</strong> Lithm</li>
+                        <li class="mb-2"><strong>Battery Voltage:</strong> 120V</li>
+                        <li class="mb-2"><strong>Battery Capacity:</strong> 1.0Ah</li>
+                        <li class="mb-2"><strong>Max Capacity In Metal:</strong> 20mm</li>
+                        <li class="mb-2"><strong>Weight:</strong> 2.5kg</li>
+                        <li class="mb-2"><strong>Drilling Capacity - Concrete:</strong> 32mm</li>
+                        <li class="mb-2"><strong>No Load Speed:</strong> 0-520 rpm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="add">
+                <div class="p-4 border rounded bg-white shadow-sm" style="border-color: #465ea1;">
+                    <h5 class="fw-bold mb-3" style="color: #465ea1;">Additional Information</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered mb-0" style="border-color: #465ea1;">
+                            <tbody class="text-muted">
+                                <tr>
+                                    <th class="fw-semibold w-25">Brand:</th>
+                                    <td>ThemeForest</td>
+                                </tr>
+                                <tr>
+                                    <th class="fw-semibold">Color:</th>
+                                    <td>Brown</td>
+                                </tr>
+                                <tr>
+                                    <th class="fw-semibold">Size:</th>
+                                    <td>Large, Medium</td>
+                                </tr>
+                                <tr>
+                                    <th class="fw-semibold">Weight:</th>
+                                    <td>27 kg</td>
+                                </tr>
+                                <tr>
+                                    <th class="fw-semibold">Dimensions:</th>
+                                    <td>16 x 22 x 123 cm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="info">
+                <div class="p-4 border rounded bg-white shadow-sm" style="border-color: #465ea1;">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="fw-bold mb-0" style="color: #465ea1;">Customer Reviews</h5>
+                        <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#reviewModal"
+                            style="background-color: #465ea1; color: white;">Write A
+                            Review</button>
+                    </div>
+                    <div id="review-summary" class="text-muted mb-3">
+                        <!-- This will be updated via JS -->
+                    </div>
+                    <hr>
+                    <div id="reviews-container">
+                        <!-- Reviews will be injected here via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="scroll-container" id="product-list">
+            <!-- Cards will be added dynamically here -->
+        </div>
+    </div>
+    <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reviewModalLabel">Submit Your Review</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <form id="reviewForm">
+                        <div class="mb-3">
+                            <label for="reviewTitle" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="reviewTitle"
+                                placeholder="e.g., Excellent Product" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rating" class="form-label">Rating</label>
+                            <select class="form-select" id="rating" required>
+                                <option value="">Choose rating</option>
+                                <option value="5">★★★★★</option>
+                                <option value="4">★★★★☆</option>
+                                <option value="3">★★★☆☆</option>
+                                <option value="2">★★☆☆☆</option>
+                                <option value="1">★☆☆☆☆</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="username" placeholder="e.g., TechFan" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewText" class="form-label">Review</label>
+                            <textarea class="form-control" id="reviewText" rows="3"
+                                placeholder="Write your review here..." required></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" form="reviewForm" class="btn btn-primary">Submit Review</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <section class="subscribe-area ptb-54">
         <div class="container">
             <div class="row align-items-center">
@@ -350,8 +568,9 @@
             </p>
         </div>
     </div>
+
+    <script src="js/products.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/privacyPolicy.js"></script>
 </body>
 
 </html>

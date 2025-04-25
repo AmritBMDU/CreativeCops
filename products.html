@@ -2,573 +2,994 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Product Detail</title>
-    <link rel="stylesheet" href="/stylesheet/products.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/products.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <!-- Remixicon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/product.css" />
+  <title>Product</title>
+  <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS (always first to avoid overrides) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+  <!-- Your Custom Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SCSS (use compiled CSS in production) -->
+  <link rel="stylesheet" href="./css/responsive.css"> <!-- Make sure it's compiled from .scss -->
+
+  <!-- Font Awesome Kit (Optional - only needed if you use icons not available in CDN link above) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Remixicon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Remix Toggle show -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <header class="header-area">
-        <!-- Start Top Header -->
-        <div class="top-header">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <ul class="header-left-content">
+  <!-- Start Header Area -->
+  <header class="header-area">
+    <!-- Start Top Header -->
+    <div class="top-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <ul class="header-left-content">
 
-                            <li>
-                                Need help? Call:
-                                <a href="tel:+1-(514)-321-4567">
-                                    <span>+91 9388764245</span>
-                                </a>
-                            </li>
-                            <li>
+              <li>
+                Need help? Call:
+                <a href="tel:+1-(514)-321-4567">
+                  <span>+91 9388764245</span>
+                </a>
+              </li>
+              <!-- <li>
                                 <a href="about.html">
                                     About US
                                 </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="header-right-content">
-                            <ul>
-                                <li>
-                                    <span style="color: #465ea1;"><i class="bi bi-person-circle"></i></span>
-                                    <a href="my-account.html">My Account</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                            </li> -->
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <div class="header-right-content">
+              <ul>
+                <li>
+                  <span style="color: #465ea1;"><i class="bi bi-person-circle"></i></span>
+                  <a href="my-account.html">My Account</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-        <!-- Start Top Header -->
+      </div>
+    </div>
+    <!-- Start Top Header -->
 
-        <!-- Start Middle Header -->
-        <div class=" container-fluid middle-header">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-3">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img style="height: 60px;" src="./AssetImage/Creative Cops Logo.svg" alt="Image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5">
-                        <form class="search-box">
-                            <input type="text" name="Search" placeholder="Search Products..." class="form-control">
-                            <button type="submit" class="search-btn">
-                                <i class="ri-search-line"></i>
-                                Search
-                            </button>
-                        </form>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <ul class="wish-cart">
-                            <li>
-                                <a href="wishlist.html">
-                                    <span class="wish-icon">
-                                        <i class="ri-heart-line"></i>
-                                        <span class="count">0</span>
-                                    </span>
-                                    <span class="favorite">Favorite</span>
-                                    My Wishlist
-                                </a>
-                            </li>
-
-                            <li>
-                                <span class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal-cart">
-                                    <span class="wish-icon">
-                                        <i class="ri-shopping-cart-line"></i>
-                                        <span class="count">0</span>
-                                    </span>
-                                    <span class="favorite">Your Cart:</span>
-                                    ₹00.00
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Start Middle Header -->
+    <div class=" container-fluid middle-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div class="logo">
+              <a href="index.html">
+                <img style="height: 60px;" src="./AssetImage/Creative Cops Logo.svg" alt="Image">
+              </a>
             </div>
+          </div>
+
+          <div class="col-lg-5">
+            <form class="search-box d-none">
+              <input type="text" name="Search" placeholder="Search Products..." class="form-control">
+              <button type="submit" class="search-btn">
+                <i class="ri-search-line"></i>
+                Search
+              </button>
+            </form>
+          </div>
+
+          <div class="col-lg-4">
+            <ul class="wish-cart">
+              <li>
+                <a href="wishlist.html">
+                  <span class="wish-icon">
+                    <i class="ri-heart-line"></i>
+                    <span class="count">0</span>
+                  </span>
+                  <span class="favorite">Favorite</span>
+                  My Wishlist
+                </a>
+              </li>
+
+              <li>
+                <a href="shoppingCart.html">
+                  <span class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal-cart">
+                    <span class="wish-icon">
+                      <i class="ri-shopping-cart-line"></i>
+                      <span class="count">0</span>
+                    </span>
+                    <span class="favorite">Your Cart:</span>
+                    ₹00.00
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Start Middle Header -->
+    <!-- Start Middle Header -->
 
-        <!-- Start Navber in Hearder  -->
-        <div class="container-fluid bg-light header">
-            <div class="d-flex justify-content-center">
-                <nav class="py-2">
-                    <ul class="navbar-nav d-flex flex-row align-items-center gap-3">
-                        <li class="nav-item">
-                            <div class="dropdown-center">
-                                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <div class="nav-icon-container">
-                                        <div>HOME</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <div class="dropdown-center">
-                                <a class="nav-link" href="about.html">
-                                    <div class="nav-icon-container">
-                                        <div>ABOUT US</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <div class="dropdown-center">
-                                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <div class="nav-icon-container">
-                                        <div>CATEGORIES <i class="ri-arrow-down-s-line"></i></div>
-                                    </div>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Tracker </a></li>
-                                    <li><a class="dropdown-item" href="#">Device </a></li>
-                                    <li><a class="dropdown-item" href="#">GPS Tracker</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <div class="nav-icon-container">
-                                    <div>BLOG</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">
-                                <div class="nav-icon-container">
-                                    <div>CONTACT US</div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-        <!-- End  -->
-    </header>
-    <!-- Header Section -->
-    <div data-include="/components/Header.html"></div>
-
-    <div class="container my-5">
-        <div class="row product-box">
-            <!-- Image Carousel -->
-            <div class="col-md-6">
-                <img id="mainProductImg" src="AssetImage\product1.png" class="img-fluid w-100 main-img mb-3 border"
-                    style="border-color: #465ea1;" alt="Main Product" />
-                <div class="d-flex overflow-auto gap-2 flex-nowrap" id="thumbnails">
-                    <img src="AssetImage\product1.png" class="thumbnail-img border active-thumb"
-                        style="height: 120px; width: 120px; border-color: #465ea1;" onclick="changeMainImage(this)" />
-                    <img src="AssetImage\product2.png" class="thumbnail-img"
-                        style="height: 120px; width: 120px; border-color: #465ea1;" onclick="changeMainImage(this)" />
-                    <img src="AssetImage\product3.png" class="thumbnail-img"
-                        style="height: 120px; width: 120px; border-color: #465ea1;" onclick="changeMainImage(this)" />
-                    <img src="AssetImage\product4.jpg" class="thumbnail-img"
-                        style="height: 120px; width: 120px; border-color: #465ea1;" onclick="changeMainImage(this)" />
-                </div>
-            </div>
-
-            <!-- Product Details -->
-            <div class="col-md-6" style="text-align: start;">
-                <h4 style="color: #465ea1;">Cordless Drill Professional Combo Drill And Screwdriver</h4>
-                <div class="d-flex align-items-center mb-2">
-                    <span class="text-warning" style="color: #465ea1;">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-                    <span class="ms-2" style="color: #465ea1;">4 Reviews</span>
-                </div>
-                <h5 style="color: #465ea1;">$119.00 <small
-                        class="text-muted text-decoration-line-through">$219.00</small></h5>
-                <p class="text-success" style="color: #465ea1;">In Stock (8 Items)</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                <ul class="list-unstyled" style="color: #465ea1;">
-                    <li><strong>SKU:</strong> 001</li>
-                    <li><strong>Availability:</strong> Available</li>
-                    <li><strong>Brand:</strong> Creative Cops</li>
-                    <li><strong>Categories:</strong> Power Drill</li>
+    <!-- Start Navber in Hearder  -->
+    <div class="container-fluid bg-light header">
+      <div class="d-flex justify-content-center">
+        <nav class="py-2">
+          <ul class="navbar-nav d-flex flex-row align-items-center gap-3">
+            <li class="nav-item">
+              <div class="dropdown-center">
+                <a class="nav-link" href="/" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="nav-icon-container">
+                    <div>HOME</div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown-center">
+                <a class="nav-link" href="about.html">
+                  <div class="nav-icon-container">
+                    <div>ABOUT US</div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown-center">
+                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="nav-icon-container">
+                    <div>CATEGORIES <i class="ri-arrow-down-s-line"></i></div>
+                  </div>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="products.html">Tracker </a></li>
+                  <li><a class="dropdown-item" href="products.html">Device </a></li>
+                  <li><a class="dropdown-item" href="products.html">GPS Tracker</a></li>
                 </ul>
-                <div class="mb-3" style="color: #465ea1;">
-                    <strong>Color:</strong>
-                    <span class="color-dot bg-primary active" onclick="selectColor(this)"
-                        style="border: 2px solid #465ea1;"></span>
-                    <span class="color-dot bg-success" onclick="selectColor(this)"
-                        style="border: 2px solid #465ea1;"></span>
-                    <span class="color-dot bg-danger" onclick="selectColor(this)"
-                        style="border: 2px solid #465ea1;"></span>
-                    <span class="color-dot bg-info" onclick="selectColor(this)"
-                        style="border: 2px solid #465ea1;"></span>
-                    <span class="color-dot bg-warning" onclick="selectColor(this)"
-                        style="border: 2px solid #465ea1;"></span>
-                </div>
-                <div class="d-flex align-items-center mb-3">
-                    <button class="btn" style="border: 1px solid #465ea1; color: #465ea1;"
-                        onclick="changeQty(-1)">-</button>
-                    <input type="text" id="qty" value="1" class="form-control mx-2"
-                        style="width: 60px; text-align: center; border-color: #465ea1;" readonly />
-                    <button class="btn" style="border: 1px solid #465ea1; color: #465ea1;"
-                        onclick="changeQty(1)">+</button>
-                </div>
-                <div class="mb-3">
-                    <button class="btn" style="background-color: #465ea1; color: white;">Add To Cart</button>
-                    <button class="btn btn-outline-secondary ms-2"
-                        style="border-color: #465ea1; color: #465ea1;">&#9825; Wishlist</button>
-                </div>
-                <div style="color: #465ea1;">
-                    <strong>Share:</strong>
-                    <i class="bi bi-facebook mx-1"></i>
-                    <i class="bi bi-instagram mx-1"></i>
-                    <i class="bi bi-linkedin mx-1"></i>
-                    <i class="bi bi-twitter mx-1"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container my-4">
-        <ul class="nav nav-pills gap mb-4" id="tabMenu">
-            <li class="nav-item">
-                <a class="nav-link text-black fs-6 fs-sm-4" href="#" onclick="showTab(event, 'desc')"
-                    style="color: #465ea1;">Description</a>
+              </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-black fs-6 fs-sm-4" href="#" onclick="showTab(event, 'add')"
-                    style="color: #465ea1;">Additional_Information</a>
+              <a class="nav-link" href="#">
+                <div class="nav-icon-container">
+                  <div>BLOG</div>
+                </div>
+              </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-black fs-6 fs-sm-4" href="#" onclick="showTab(event, 'info')"
-                    style="color: #465ea1;">Reviews</a>
+              <a class="nav-link" href="contact.html">
+                <div class="nav-icon-container">
+                  <div>CONTACT US</div>
+                </div>
+              </a>
             </li>
-        </ul>
-
-        <div class="tab-content">
-            <div class="tab-pane fade show active" id="desc">
-                <div class="p-4 border rounded bg-white shadow-sm" style="border-color: #465ea1;">
-                    <h5 class="fw-bold mb-3" style="color: #465ea1;">Product Description</h5>
-                    <p class="text-muted">
-                        Design inspiration lorem ipsum dolor sit amet...
-                    </p>
-                    <h5 class="fw-bold mt-4 mb-3" style="color: #465ea1;">Specification</h5>
-                    <ul class="list-unstyled text-muted">
-                        <li class="mb-2"><strong>Model:</strong> 001</li>
-                        <li class="mb-2"><strong>Battery Chemistry:</strong> Lithm</li>
-                        <li class="mb-2"><strong>Battery Voltage:</strong> 120V</li>
-                        <li class="mb-2"><strong>Battery Capacity:</strong> 1.0Ah</li>
-                        <li class="mb-2"><strong>Max Capacity In Metal:</strong> 20mm</li>
-                        <li class="mb-2"><strong>Weight:</strong> 2.5kg</li>
-                        <li class="mb-2"><strong>Drilling Capacity - Concrete:</strong> 32mm</li>
-                        <li class="mb-2"><strong>No Load Speed:</strong> 0-520 rpm</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="add">
-                <div class="p-4 border rounded bg-white shadow-sm" style="border-color: #465ea1;">
-                    <h5 class="fw-bold mb-3" style="color: #465ea1;">Additional Information</h5>
-                    <div class="table-responsive">
-                        <table class="table table-bordered mb-0" style="border-color: #465ea1;">
-                            <tbody class="text-muted">
-                                <tr>
-                                    <th class="fw-semibold w-25">Brand:</th>
-                                    <td>ThemeForest</td>
-                                </tr>
-                                <tr>
-                                    <th class="fw-semibold">Color:</th>
-                                    <td>Brown</td>
-                                </tr>
-                                <tr>
-                                    <th class="fw-semibold">Size:</th>
-                                    <td>Large, Medium</td>
-                                </tr>
-                                <tr>
-                                    <th class="fw-semibold">Weight:</th>
-                                    <td>27 kg</td>
-                                </tr>
-                                <tr>
-                                    <th class="fw-semibold">Dimensions:</th>
-                                    <td>16 x 22 x 123 cm</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-pane fade" id="info">
-                <div class="p-4 border rounded bg-white shadow-sm" style="border-color: #465ea1;">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h5 class="fw-bold mb-0" style="color: #465ea1;">Customer Reviews</h5>
-                        <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#reviewModal"
-                            style="background-color: #465ea1; color: white;">Write A
-                            Review</button>
-                    </div>
-                    <div id="review-summary" class="text-muted mb-3">
-                        <!-- This will be updated via JS -->
-                    </div>
-                    <hr>
-                    <div id="reviews-container">
-                        <!-- Reviews will be injected here via JavaScript -->
-                    </div>
-                </div>
-            </div>
-        </div>
+          </ul>
+        </nav>
+      </div>
     </div>
 
-    <div class="container my-4">
-        <div class="scroll-container" id="product-list">
-            <!-- Cards will be added dynamically here -->
+    <!-- End  -->
+  </header>
+  <div class="container-md mt-5">
+    <p>Home / <span class="common-color">Products</span></p>
+    <!-- Layout  -->
+    <div class="row g-3 mt-5">
+      <!--MainBox Left Layout  -->
+      <div class="left-side-layout" style="width: 30%">
+        <!-- Product categrious  -->
+        <div class="col border">
+          <h4 class="border-bottom prod-hight">Product Categories</h4>
+          <p class="border-bottom py-1 p-2">
+            <i class="fa-solid fa-angle-right m-2"></i>iTracker
+          </p>
+          <p class="border-bottom py-1 p-2">
+            <i class="fa-solid fa-angle-right m-2"></i>Mini Tracker
+          </p>
+          <p class="border-bottom py-1 p-2">
+            <i class="fa-solid fa-angle-right m-2"></i>GPS Tracker
+          </p>
         </div>
-    </div>
-    <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
 
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h5 class="modal-title" id="reviewModalLabel">Submit Your Review</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+        <!-- filter price  -->
+        <div class="col border mt-4 filter-box">
+          <label for="customRange1" class="form-label mt-4 ms-4">
+            <h3>Filter By Price</h3>
+          </label>
+          <input type="range" class="form-range p-4 inputPrice" id="customRange1" min="500" max="10000" step="1" />
+          <p class="ms-4">$500 - <span class="maxValuePrice">$10000</span></p>
+        </div>
 
-                <!-- Modal Body -->
-                <div class="modal-body">
-                    <form id="reviewForm">
-                        <div class="mb-3">
-                            <label for="reviewTitle" class="form-label">Title</label>
-                            <input type="text" class="form-control" id="reviewTitle"
-                                placeholder="e.g., Excellent Product" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="rating" class="form-label">Rating</label>
-                            <select class="form-select" id="rating" required>
-                                <option value="">Choose rating</option>
-                                <option value="5">★★★★★</option>
-                                <option value="4">★★★★☆</option>
-                                <option value="3">★★★☆☆</option>
-                                <option value="2">★★☆☆☆</option>
-                                <option value="1">★☆☆☆☆</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="username" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="username" placeholder="e.g., TechFan" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="reviewText" class="form-label">Review</label>
-                            <textarea class="form-control" id="reviewText" rows="3"
-                                placeholder="Write your review here..." required></textarea>
-                        </div>
-                    </form>
-                </div>
+        <!-- filter Brand  -->
+        <div class="col border mt-4 filter-brand">
+          <h3 class="border-bottom prod-hight">Brand</h3>
 
-                <!-- Modal Footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" form="reviewForm" class="btn btn-primary">Submit Review</button>
-                </div>
-
+          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
+            <div>
+              <input class="form-check-input" type="checkbox" value="1" id="depen" />
+              <label class="form-check-label" for="depen">Depen</label>
             </div>
-        </div>
-    </div>
-    <section class="subscribe-area ptb-54">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-2">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="./AssetImage/Creative Cops Logo.svg" alt="Image">
-                        </a>
-                    </div>
-                </div>
+            <p class="mb-0 p-4">(21)</p>
+          </div>
 
-                <div class="col-lg-5">
-                    <div class="subscribe-content">
-                        <span>30% Discount For Your First Order</span>
-                        <h3>Subscribe To Our Newsletter</h3>
-                        <p>Subscribe to the newsletter for all the latest updates</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-5">
-                    <form class="newsletter-form" data-toggle="validator">
-                        <input type="email" class="form-control" placeholder="Your email address" name="EMAIL" required
-                            autocomplete="off">
-
-                        <button class="submit-btn" type="submit">
-                            Subscribe
-                        </button>
-
-                        <div id="validator-newsletter" class="form-result"></div>
-                    </form>
-                </div>
+          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
+            <div>
+              <input class="form-check-input" type="checkbox" value="1" id="esit" />
+              <label class="form-check-label" for="esit">Esit</label>
             </div>
-        </div>
-    </section>
-    <div class="footer-area mt-5 pt-54 pb-30">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h3>Quick Information</h3>
+            <p class="mb-0 p-4">(75)</p>
+          </div>
 
-                        <ul class="info-list">
-                            <li>
-                                <i class="ri-map-pin-line"></i>
-                                <a>2491 Reel Avenue Albuquerque, NM </a>
-                            </li>
-                            <li>
-                                <i class="ri-phone-line"></i>
-                                <a href="tel:+1-(514)-321-4566">+1 (514) 321-4566</a>
-                            </li>
-                            <li>
-                                <i class="ri-mail-send-line"></i>
-                                <a href="/cdn-cgi/l/email-protection#aecbc6cfd7eecbd6cfc3dec2cb80cdc1c3"><span
-                                        class="__cf_email__"
-                                        data-cfemail="adc8c5ccd4edc8d5ccc0ddc1c883cec2c0">[email&#160;protected]</span></a>
-                            </li>
-                            <li>
-                                <i class="ri-time-line"></i>
-                                <a>Mon-Sat 8:00 AM - 8:00 PM</a>
-                            </li>
-                        </ul>
-
-                        <ul class="social-link">
-                            <li>
-                                <span>Stay connected:</span>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/" target="_blank">
-                                    <i class="ri-facebook-fill"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.twitter.com/" target="_blank">
-                                    <i class="ri-twitter-fill"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
-                                    <i class="ri-linkedin-fill"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <i class="ri-instagram-fill"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h3>Information</h3>
-
-                        <ul class="import-link">
-                            <li>
-                                <a href="about.html">About Us</a>
-                            </li>
-                            <li>
-                                <a href="privacyPolicy.html">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="termCondition.html">Term Condition</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h3>Customer Service</h3>
-
-                        <ul class="import-link">
-                            <li>
-                                <a href="faq.html">Help Center</a>
-                            </li>
-                            <li>
-                                <a href="products.html">Products</a>
-                            </li>
-                            <li>
-                                <a href="terms-conditions.html">Money-back Guarantee!</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">Blog</a>
-                            </li>
-                            <li>
-                                <a href="privacy-policy.html">Accessibility</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h3>Download App On Mobile</h3>
-                        <p>30% discount on your first order</p>
-
-                        <ul class="app-btn">
-                            <li>
-                                <a href="https://www.apple.com/store" target="_blank">
-                                    <img src="./AssetImage/app-store.png" alt="Image">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://play.google.com/store/apps" target="_blank">
-                                    <img src="./AssetImage/google-play.png" alt="Image">
-                                </a>
-                            </li>
-                        </ul>
-
-                        <span class="payment">We Accept Payment Via</span>
-
-                        <ul class="payment-option">
-                            <li>
-                                <img src="./AssetImage/payment-1.png" alt="Image">
-                            </li>
-                            <li>
-                                <img src="./AssetImage/payment-2.png" alt="Image">
-                            </li>
-                            <li>
-                                <img src="./AssetImage/payment-3.png" alt="Image">
-                            </li>
-                            <li>
-                                <img src="./AssetImage/payment-4.png" alt="Image">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
+            <div>
+              <input class="form-check-input" type="checkbox" value="1" id="mund" />
+              <label class="form-check-label" for="mund">Mund</label>
             </div>
+            <p class="mb-0 p-4">(21)</p>
+          </div>
+
+          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
+            <div>
+              <input class="form-check-input" type="checkbox" value="1" id="roose" />
+              <label class="form-check-label" for="roose">Roose</label>
+            </div>
+            <p class="mb-0 p-4">(21)</p>
+          </div>
+
+          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
+            <div>
+              <input class="form-check-input" type="checkbox" value="1" id="scora" />
+              <label class="form-check-label" for="scora">Scora</label>
+            </div>
+            <p class="mb-0 p-4">(21)</p>
+          </div>
+
+          <div class="form-check d-flex justify-content-between align-items-center">
+            <div>
+              <input class="form-check-input" type="checkbox" value="1" id="wikin" />
+              <label class="form-check-label" for="wikin">Wikin</label>
+            </div>
+            <p class="mb-0 p-4">(21)</p>
+          </div>
         </div>
-    </div>
-    <!-- End Footer  Area -->
-    <!-- Start Copy Right Area -->
-    <div class="copy-right-area">
-        <div class="container">
-            <p><a href="https://envytheme.com/" target="_blank">&copy; Creative Crops All Right Reserved Desiged By
-                    BMDU</a>
+
+        <!-- filter Color  -->
+        <!-- <div class="col mt-4 filter-color border">
+          <h3 class="prod-hight">Color</h3>
+          <div class="colors">
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+              <input type="color" value="#FF0000" style="width: 2rem" disabled />
+              <input type="color" value="#00FF00" style="width: 2rem" disabled />
+              <input type="color" value="#0000FF" style="width: 2rem" disabled />
+              <input type="color" value="#FFFF00" style="width: 2rem" disabled />
+              <input type="color" value="#FF00FF" style="width: 2rem" disabled />
+              <input type="color" value="#00FFFF" style="width: 2rem" disabled />
+              <input type="color" value="#800000" style="width: 2rem" disabled />
+              <input type="color" value="#808000" style="width: 2rem" disabled />
+              <input type="color" value="#008000" style="width: 2rem" disabled />
+              <input type="color" value="#800080" style="width: 2rem" disabled />
+              <input type="color" value="#008080" style="width: 2rem" disabled />
+              <input type="color" value="#000080" style="width: 2rem" disabled />
+              <input type="color" value="#FFA500" style="width: 2rem" disabled />
+              <input type="color" value="#A52A2A" style="width: 2rem" disabled />
+              <input type="color" value="#8A2BE2" style="width: 2rem" disabled />
+              <input type="color" value="#5F9EA0" style="width: 2rem" disabled />
+              <input type="color" value="#7FFF00" style="width: 2rem" disabled />
+              <input type="color" value="#D2691E" style="width: 2rem" disabled />
+              <input type="color" value="#FF7F50" style="width: 2rem" disabled />
+              <input type="color" value="#6495ED" style="width: 2rem" disabled />
+              <input type="color" value="#DC143C" style="width: 2rem" disabled />
+              <input type="color" value="#00CED1" style="width: 2rem" disabled />
+              <input type="color" value="#9400D3" style="width: 2rem" disabled />
+              <input type="color" value="#FFD700" style="width: 2rem" disabled />
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Trending Products  -->
+        <div class="col mt-4 filter-color border">
+          <h3 class="prod-hight">Trending Products</h3>
+
+          <div class="card mb-3 border-0 border-bottom" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="AssetImage/product1.png" class="img-fluid rounded-start" alt="productImage" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="fw-medium">
+                    Good Quality GPS Tracker
+                  </p>
+                  <p class="fw-medium common-color">
+                    $29.00 &nbsp;
+                    <span style="color: grey; text-decoration: line-through">$50.00</span>
+                  </p>
+                  <div class="common-color">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 border-0 border-bottom" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="AssetImage/product2.png" class="img-fluid rounded-start" alt="productImage" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="fw-medium">High Quality Industrial Wood</p>
+                  <p class="fw-medium common-color">
+                    $19.00 &nbsp;
+                    <span style="color: grey; text-decoration: line-through">$30.00</span>
+                  </p>
+                  <div class="common-color">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 border-0 border-bottom" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="AssetImage/product3.png" class="img-fluid rounded-start" alt="productImage" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="fw-medium">
+                    Professional Straight Cutting Scissor
+                  </p>
+                  <p class="fw-medium common-color">
+                    $27.00 &nbsp;
+                    <span style="color: grey; text-decoration: line-through">$50.00</span>
+                  </p>
+                  <div class="common-color">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 border-0 border-bottom" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="AssetImage/product4.jpg" class="img-fluid rounded-start" alt="productImage" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="fw-medium">
+                    90 Degree Angle Square Combination Handle
+                  </p>
+                  <p class="fw-medium common-color">
+                    $54.00 &nbsp;
+                    <span style="color: grey; text-decoration: line-through">$50.00</span>
+                  </p>
+                  <div class="common-color">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 border-0" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="AssetImage/product4.jpg" class="img-fluid rounded-start" alt="productImage" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="fw-medium">High Quality Steel Clamp Tool</p>
+                  <p class="fw-medium common-color">
+                    $29.00 &nbsp;
+                    <span style="color: grey; text-decoration: line-through">$50.00</span>
+                  </p>
+                  <div class="common-color">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MainBox Right Layout  -->
+      <div class="col-sm-8">
+        <!-- Right Layout  -->
+
+        <!-- banner tools offer  -->
+        <div class="container border mb-3 p-0 ms-3">
+          <div class="banner bg-image text-white d-flex flex-column justify-content-center align-items-start p-5">
+            <p class="fs-5 font-w-off">
+              Sale offer <span class="common-color">-30% off</span>
             </p>
+            <h3 class="mb-3">All types of premium quality tools</h3>
+            <button type="button" class="btn btn-custom">Shop Now</button>
+          </div>
         </div>
-    </div>
 
-    <script src="js/products.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!--select show products  -->
+        <div class="container mb-4 py-3 d-flex justify-content-between gap-4">
+          <div class="titile-text d-flex gap-2" style="width: 50%">
+            <p>Showing 16 of 60 products</p>
+          </div>
+
+          <div class="col-md-4 mb-4" style="width: 50%">
+            <select id="dropdown1" class="form-select" style="width: 100%">
+              <option selected disabled>Default Sorting</option>
+              <option>iTrack</option>
+              <option>Mini Tracker</option>
+              <option>GPS Tracker</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Card products  -->
+        <div class="mb-3 mt-4 d-flex flex-wrap gap-4">
+          <!-- card1  -->
+          <div class="card" style="width: 48%">
+            <img src="AssetImage/product1.png" class="card-img-top" alt="product" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Mini Tracker
+              </h5>
+              <div class="common-color mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                &nbsp;
+                <span>(0.3 Review)</span>
+              </div>
+
+              <p class="card-text">
+                <span class="common-color"> $119.00</span>
+                &nbsp;<span style="text-decoration: line-through; color: gray">$219.00</span>&nbsp; <span>In
+                  Stock</span>
+              </p>
+              <button href="#" class="btn btn-light border" style="color: gray">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-regular fa-heart fs-5"></i>
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- card2 -->
+          <div class="card" style="width: 48%">
+            <img src="AssetImage/product2.png" class="card-img-top" alt="product" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Mini Tracker
+              </h5>
+              <div class="common-color mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                &nbsp;
+                <span>(0.3 Review)</span>
+              </div>
+
+              <p class="card-text">
+                <span class="common-color"> $119.00</span>
+                &nbsp;<span style="text-decoration: line-through; color: gray">$219.00</span>&nbsp; <span>In
+                  Stock</span>
+              </p>
+              <button href="#" class="btn btn-light border" style="color: gray">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-regular fa-heart fs-5"></i>
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- card3  -->
+          <div class="card" style="width: 48%">
+            <img src="AssetImage/product3.png" class="card-img-top" alt="product" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Mini Tracker
+              </h5>
+              <div class="common-color mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                &nbsp;
+                <span>(0.3 Review)</span>
+              </div>
+
+              <p class="card-text">
+                <span class="common-color"> $119.00</span>
+                &nbsp;<span style="text-decoration: line-through; color: gray">$219.00</span>&nbsp; <span>In
+                  Stock</span>
+              </p>
+              <button href="#" class="btn btn-light border" style="color: gray">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-regular fa-heart fs-5"></i>
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- card4  -->
+          <div class="card" style="width: 48%">
+            <img src="AssetImage/product3.png" class="card-img-top" alt="product" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Mini Tracker
+              </h5>
+              <div class="common-color mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                &nbsp;
+                <span>(0.3 Review)</span>
+              </div>
+
+              <p class="card-text">
+                <span class="common-color"> $119.00</span>
+                &nbsp;<span style="text-decoration: line-through; color: gray">$219.00</span>&nbsp; <span>In
+                  Stock</span>
+              </p>
+              <button href="#" class="btn btn-light border" style="color: gray">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-regular fa-heart fs-5"></i>
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- card5  -->
+          <div class="card" style="width: 48%">
+            <img src="AssetImage/product4.jpg" class="card-img-top" alt="product" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Mini Tracker
+              </h5>
+              <div class="common-color mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                &nbsp;
+                <span>(0.3 Review)</span>
+              </div>
+
+              <p class="card-text">
+                <span class="common-color"> $119.00</span>
+                &nbsp;<span style="text-decoration: line-through; color: gray">$219.00</span>&nbsp; <span>In
+                  Stock</span>
+              </p>
+              <button href="#" class="btn btn-light border" style="color: gray">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-regular fa-heart fs-5"></i>
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- card6  -->
+          <div class="card" style="width: 48%">
+            <img src="AssetImage/product5.jpg" class="card-img-top" alt="product" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Mini Tracker
+              </h5>
+              <div class="common-color mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                &nbsp;
+                <span>(0.3 Review)</span>
+              </div>
+
+              <p class="card-text">
+                <span class="common-color"> $119.00</span>
+                &nbsp;<span style="text-decoration: line-through; color: gray">$219.00</span>&nbsp; <span>In
+                  Stock</span>
+              </p>
+              <button href="#" class="btn btn-light border" style="color: gray">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-regular fa-heart fs-5"></i>
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- card7  -->
+          <div class="card" style="width: 48%">
+            <img src="AssetImage/product6.png" class="card-img-top" alt="product" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Mini Tracker
+              </h5>
+              <div class="common-color mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                &nbsp;
+                <span>(0.3 Review)</span>
+              </div>
+
+              <p class="card-text">
+                <span class="common-color"> $119.00</span>
+                &nbsp;<span style="text-decoration: line-through; color: gray">$219.00</span>&nbsp; <span>In
+                  Stock</span>
+              </p>
+              <button href="#" class="btn btn-light border" style="color: gray">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-regular fa-heart fs-5"></i>
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- card8  -->
+          <div class="card" style="width: 48%">
+            <img src="AssetImage/product7.png" class="card-img-top" alt="product" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Mini Tracker
+              </h5>
+              <div class="common-color mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                &nbsp;
+                <span>(0.3 Review)</span>
+              </div>
+
+              <p class="card-text">
+                <span class="common-color"> $119.00</span>
+                &nbsp;<span style="text-decoration: line-through; color: gray">$219.00</span>&nbsp; <span>In
+                  Stock</span>
+              </p>
+              <button href="#" class="btn btn-light border" style="color: gray">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add To Cart
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-regular fa-heart fs-5"></i>
+              </button>
+
+              <button href="#" class="btn btn-light border ms-2 br-2" style="color: gray">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NextBtn -->
+      <div class="nextBtn d-flex mt-5 mb-5 gap-3 justify-content-center">
+        <div class="d-flex justify-content-center align-items-center text-white fw-bold common-colorbg nextBtnHover"
+          style="
+              border: 1px solid #000;
+
+              width: 2.5rem;
+              height: 2.5rem;
+            ">
+          1
+        </div>
+        <div class="d-flex justify-content-center align-items-center text-black fw-bold nextBtnHover" style="
+              border: 1px solid #000;
+
+              width: 2.5rem;
+              height: 2.5rem;
+            ">
+          2
+        </div>
+        <div class="d-flex justify-content-center align-items-center text-black fw-bold nextBtnHover" style="
+              border: 1px solid #000;
+
+              width: 2.5rem;
+              height: 2.5rem;
+            ">
+          3
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center text-black fw-bold nextBtnHover"
+          style="border: 1px solid #000; width: 2.5rem; height: 2.5rem">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="subscribe-area ptb-54">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-2">
+          <div class="logo">
+            <a href="index.html">
+              <img src="./AssetImage/Creative Cops Logo.svg" alt="Image">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="subscribe-content">
+            <span>30% Discount For Your First Order</span>
+            <h3>Subscribe To Our Newsletter</h3>
+            <p>Subscribe to the newsletter for all the latest updates</p>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <form class="newsletter-form" data-toggle="validator">
+            <input type="email" class="form-control" placeholder="Your email address" name="EMAIL" required
+              autocomplete="off">
+
+            <button class="submit-btn" type="submit">
+              Subscribe
+            </button>
+
+            <div id="validator-newsletter" class="form-result"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="footer-area mt-5 pt-54 pb-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-footer-widget">
+            <h3>Quick Information</h3>
+
+            <ul class="info-list">
+              <li>
+                <i class="ri-map-pin-line"></i>
+                <a>2491 Reel Avenue Albuquerque, NM </a>
+              </li>
+              <li>
+                <i class="ri-phone-line"></i>
+                <a href="tel:+1-(514)-321-4566">+1 (514) 321-4566</a>
+              </li>
+              <li>
+                <i class="ri-mail-send-line"></i>
+                <a href="/cdn-cgi/l/email-protection#aecbc6cfd7eecbd6cfc3dec2cb80cdc1c3"><span class="__cf_email__"
+                    data-cfemail="adc8c5ccd4edc8d5ccc0ddc1c883cec2c0">[email&#160;protected]</span></a>
+              </li>
+              <li>
+                <i class="ri-time-line"></i>
+                <a>Mon-Sat 8:00 AM - 8:00 PM</a>
+              </li>
+            </ul>
+
+            <ul class="social-link">
+              <li>
+                <span>Stay connected:</span>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" target="_blank">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-footer-widget">
+            <h3>Information</h3>
+
+            <ul class="import-link">
+              <li>
+                <a href="about.html">About Us</a>
+              </li>
+              <li>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="termCondition.html">Term Condition</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-footer-widget">
+            <h3>Customer Service</h3>
+
+            <ul class="import-link">
+              <li>
+                <a href="faq.html">Help Center</a>
+              </li>
+              <li>
+                <a href="products.html">Products</a>
+              </li>
+              <li>
+                <a href="terms-conditions.html">Money-back Guarantee!</a>
+              </li>
+              <li>
+                <a href="blog.html">Blog</a>
+              </li>
+              <li>
+                <a href="privacy-policy.html">Accessibility</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-footer-widget">
+            <h3>Download App On Mobile</h3>
+            <p>30% discount on your first order</p>
+
+            <ul class="app-btn">
+              <li>
+                <a href="https://www.apple.com/store" target="_blank">
+                  <img src="./AssetImage/app-store.png" alt="Image">
+                </a>
+              </li>
+              <li>
+                <a href="https://play.google.com/store/apps" target="_blank">
+                  <img src="./AssetImage/google-play.png" alt="Image">
+                </a>
+              </li>
+            </ul>
+
+            <span class="payment">We Accept Payment Via</span>
+
+            <ul class="payment-option">
+              <li>
+                <img src="./AssetImage/payment-1.png" alt="Image">
+              </li>
+              <li>
+                <img src="./AssetImage/payment-2.png" alt="Image">
+              </li>
+              <li>
+                <img src="./AssetImage/payment-3.png" alt="Image">
+              </li>
+              <li>
+                <img src="./AssetImage/payment-4.png" alt="Image">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Footer  Area -->
+  <!-- Start Copy Right Area -->
+  <div class="copy-right-area">
+    <div class="container">
+      <p><a href="https://envytheme.com/" target="_blank">&copy; Creative Crops All Right Reserved Desiged By
+          BMDU</a>
+      </p>
+    </div>
+  </div>
+  <script src="js/product.js"></script>
 </body>
 
 </html>
