@@ -1074,7 +1074,7 @@ a {
 }
 
 .flash-deals-img {
-	background-image: url(../../assets/images/mega-sale-img.jpg);
+	/* background-image: url(../../assets/images/mega-sale-img.jpg); */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
