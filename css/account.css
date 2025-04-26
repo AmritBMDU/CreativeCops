@@ -1,0 +1,36 @@
+.commanMargin {
+    margin-bottom: 2rem;
+  }
+  .myAccountText {
+    color: #465ea1;
+  }
+
+  .myAccountBgColor {
+    background-color: #465ea1 ;
+    color: white;
+  }
+  input ,button {
+    border-radius: 0 !important;
+  }
+
+ .btnSubmit:hover{
+    background-color: black;
+ }
+
+ 
+/* Nav Bar Button  */
+.Search-Bar-Nav{
+    height: 10rem;
+    background-color: #465ea1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   flex-wrap: wrap;
+   min-height: 13rem;
+   
+  }
+
+  .Nav-description{
+    color: #ffff;
+  }
+  
