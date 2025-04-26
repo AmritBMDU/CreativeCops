@@ -222,14 +222,53 @@
                     <button class="btn" style="border: 1px solid #465ea1; color: #465ea1;"
                         onclick="changeQty(-1)">-</button>
                     <input type="text" id="qty" value="1" class="form-control mx-2"
-                        style="width: 60px; text-align: center; border-color: #465ea1;" readonly />
+                        style="width: 60px; height: 38px; text-align: center; border-color: #465ea1;" readonly />
                     <button class="btn" style="border: 1px solid #465ea1; color: #465ea1;"
                         onclick="changeQty(1)">+</button>
                 </div>
                 <div class="mb-3">
                     <button class="btn" style="background-color: #465ea1; color: white;">Add To Cart</button>
-                    <button class="btn btn-outline-secondary ms-2"
+                    <button class="btn btn-outline-secondary"
+                        onmouseover="this.style.backgroundColor='#465ea1'; this.style.color='#fff';"
+                        onmouseout="this.style.backgroundColor='white'; this.style.color='#465ea1';"
                         style="border-color: #465ea1; color: #465ea1;">&#9825; Wishlist</button>
+                    <!-- Modal trigger button -->
+                    <button type="button" class="btn"
+                        onmouseover="this.style.backgroundColor='#465ea1'; this.style.color='#fff';"
+                        onmouseout="this.style.backgroundColor='white'; this.style.color='#465ea1';"
+                        style="border-color: #465ea1; color: #465ea1;" data-bs-toggle="modal" data-bs-target="#modalId">
+                        View Demo
+                    </button>
+
+                    <!-- Modal Body -->
+                    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static"
+                        data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+                            role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTitleId">
+                                        View Demo
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe height="500px" width="100%"
+                                        src="https://www.shutterstock.com/shutterstock/videos/1106834665/preview/stock-footage-timelapse-of-fully-automated-pcb-assembly-line-equipped-with-advanced-high-precision-robot-arms-at.webm"
+                                        title="Product Usage Video" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div style="color: #465ea1;">
                     <strong>Share:</strong>
