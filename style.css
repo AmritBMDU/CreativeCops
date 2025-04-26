@@ -419,8 +419,37 @@ img {
 }
 
 .navbar-nav {
-	flex-direction: row;
 	font-size: 0.8rem;
+	gap: 20px
+}
+
+@media (max-width: 768px) {
+	.navbar-nav {
+		gap: 0px;
+		transition: gap 0.3s ease-in-out;
+	}
+
+	.navbar-nav .nav-item:not(:first-child) {
+		max-height: 0px;
+		overflow: hidden;
+		transition: max-height 0.3s ease-in-out;
+	}
+
+	.nav-bar-toggle {
+		position: absolute;
+		right: 15px;
+		top: 13px;
+		font-size: 20px;
+		color: white;
+	}
+
+	.navbar-nav.show {
+		gap: 10px;
+	}
+
+	.navbar-nav.show .nav-item {
+		max-height: 40px;
+	}
 }
 
 .nav-item {

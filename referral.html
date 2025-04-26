@@ -13,6 +13,7 @@
   <!-- Remixicon -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
     .earnings-box {
       background: linear-gradient(to right, #78aee9, #bec5ee);
@@ -149,58 +150,57 @@
 
     <!-- Start Navber in Hearder  -->
     <div class="container-fluid bg-light header">
-      <div class="d-flex justify-content-center">
-        <nav class="py-2">
-          <ul class="navbar-nav d-flex flex-row align-items-center gap-3">
-            <li class="nav-item">
-              <div class="dropdown-center">
-                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                  <div class="nav-icon-container">
-                    <div>HOME</div>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown-center">
-                <a class="nav-link" href="about.html">
-                  <div class="nav-icon-container">
-                    <div>ABOUT US</div>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown-center">
-                <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                  <div class="nav-icon-container">
-                    <div>CATEGORIES <i class="ri-arrow-down-s-line"></i></div>
-                  </div>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="products.html">Tracker </a></li>
-                  <li><a class="dropdown-item" href="products.html">Device </a></li>
-                  <li><a class="dropdown-item" href="products.html">GPS Tracker</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+      <nav class="py-2">
+        <ul class="navbar-nav d-flex flex-md-row flex-column justify-content-md-center justify-content-start">
+          <li class="nav-item order-1 order-md-3 align-self-start">
+            <div class="dropdown-center">
+              <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                 <div class="nav-icon-container">
-                  <div>BLOG</div>
+                  <div>CATEGORIES <i class="ri-arrow-down-s-line"></i></div>
                 </div>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">Tracker </a></li>
+                <li><a class="dropdown-item" href="products.html">Device </a></li>
+                <li><a class="dropdown-item" href="products.html">GPS Tracker</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item order-2 order-md-1">
+            <div class="dropdown-center">
+              <a class="nav-link" href="/" data-bs-toggle="dropdown" aria-expanded="false">
                 <div class="nav-icon-container">
-                  <div>CONTACT US</div>
+                  <div>HOME</div>
                 </div>
               </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+            </div>
+          </li>
+          <li class="nav-item order-3 order-md-2">
+            <div class="dropdown-center">
+              <a class="nav-link" href="about.html">
+                <div class="nav-icon-container">
+                  <div>ABOUT US</div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item order-4 order-md-4">
+            <a class="nav-link" href="#">
+              <div class="nav-icon-container">
+                <div>BLOG</div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item order-5">
+            <a class="nav-link" href="contact.html">
+              <div class="nav-icon-container">
+                <div>CONTACT US</div>
+              </div>
+            </a>
+          </li>
+          <li class="d-md-none d-block nav-bar-toggle"><i class="fa-solid fa-bars"></i></li>
+        </ul>
+      </nav>
     </div>
 
     <!-- End  -->
