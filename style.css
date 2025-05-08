@@ -3087,6 +3087,19 @@ Trending Products Style
 .trending-product-list.special-product-list .single-list img {
 	max-width: 100px;
 }
+  
+
+/* Initial icon rotation (closed state) */
+.toggle-icon {
+	transition: transform 0.3s ease;
+	transform: rotate(0deg);
+  }
+  
+  /* Rotate icon when accordion is expanded */
+  .accordion-button:not(.collapsed) .toggle-icon {
+	transform: rotate(90deg);
+  }
+  
 
 /* End  */
 /* Start Subscrib Area  */
@@ -3167,14 +3180,14 @@ Trending Products Style
 Footer Area Style
 ======================================================*/
 a {
-	color: rgb(156, 156, 156);
+	/* color:rgb(255 255 255); */
 	transition: 0.5s;
 	text-decoration: none;
 }
 
 
 a:hover {
-	color: #465ea1;
+	color: #11131a;
 	text-decoration: none;
 }
 
@@ -3285,12 +3298,13 @@ Copy Right Area Style
 .copy-right-area {
 	border-top: 1px solid #dddddd;
 	padding-top: 15px;
-	padding-bottom: 15px;
+	/* padding-bottom: 15px; */
 	text-align: center;
 }
 
 .copy-right-area p a {
 	color: #465ea1;
+	font-size: 15px;
 }
 
 .copy-right-area p a:hover {

@@ -140,7 +140,7 @@
 
     <!-- Start Navber in Hearder  -->
     <div class="container-fluid bg-light header">
-      <nav class="py-2">
+      <nav>
         <ul class="navbar-nav d-flex flex-md-row flex-column justify-content-md-center justify-content-start">
           <li class="nav-item order-1 order-md-3 align-self-start">
             <div class="dropdown-center">
@@ -158,7 +158,7 @@
           </li>
           <li class="nav-item order-2 order-md-1">
             <div class="dropdown-center">
-              <a class="nav-link" href="/" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link" href="index.html">
                 <div class="nav-icon-container">
                   <div>HOME</div>
                 </div>
@@ -175,7 +175,7 @@
             </div>
           </li>
           <li class="nav-item order-4 order-md-4">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="blog.html">
               <div class="nav-icon-container">
                 <div>BLOG</div>
               </div>
@@ -200,117 +200,7 @@
     <!-- Layout  -->
     <div class="row g-3 mt-5">
       <!--MainBox Left Layout  -->
-      <div class="left-side-layout" style="width: 30%">
-        <!-- Product categrious  -->
-        <div class="col border">
-          <h4 class="border-bottom prod-hight">Product Categories</h4>
-          <p class="border-bottom py-1 p-2">
-            <i class="fa-solid fa-angle-right m-2"></i>iTracker
-          </p>
-          <p class="border-bottom py-1 p-2">
-            <i class="fa-solid fa-angle-right m-2"></i>Mini Tracker
-          </p>
-          <p class="border-bottom py-1 p-2">
-            <i class="fa-solid fa-angle-right m-2"></i>GPS Tracker
-          </p>
-        </div>
-
-        <!-- filter price  -->
-        <div class="col border mt-4 filter-box">
-          <label for="customRange1" class="form-label mt-4 ms-4">
-            <h3>Filter By Price</h3>
-          </label>
-          <input type="range" class="form-range p-4 inputPrice" id="customRange1" min="500" max="10000" step="1" />
-          <p class="ms-4">$500 - <span class="maxValuePrice">$10000</span></p>
-        </div>
-
-        <!-- filter Brand  -->
-        <div class="col border mt-4 filter-brand">
-          <h3 class="border-bottom prod-hight">Brand</h3>
-
-          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
-            <div>
-              <input class="form-check-input" type="checkbox" value="1" id="depen" />
-              <label class="form-check-label" for="depen">Depen</label>
-            </div>
-            <p class="mb-0 p-4">(21)</p>
-          </div>
-
-          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
-            <div>
-              <input class="form-check-input" type="checkbox" value="1" id="esit" />
-              <label class="form-check-label" for="esit">Esit</label>
-            </div>
-            <p class="mb-0 p-4">(75)</p>
-          </div>
-
-          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
-            <div>
-              <input class="form-check-input" type="checkbox" value="1" id="mund" />
-              <label class="form-check-label" for="mund">Mund</label>
-            </div>
-            <p class="mb-0 p-4">(21)</p>
-          </div>
-
-          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
-            <div>
-              <input class="form-check-input" type="checkbox" value="1" id="roose" />
-              <label class="form-check-label" for="roose">Roose</label>
-            </div>
-            <p class="mb-0 p-4">(21)</p>
-          </div>
-
-          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
-            <div>
-              <input class="form-check-input" type="checkbox" value="1" id="scora" />
-              <label class="form-check-label" for="scora">Scora</label>
-            </div>
-            <p class="mb-0 p-4">(21)</p>
-          </div>
-
-          <div class="form-check d-flex justify-content-between align-items-center">
-            <div>
-              <input class="form-check-input" type="checkbox" value="1" id="wikin" />
-              <label class="form-check-label" for="wikin">Wikin</label>
-            </div>
-            <p class="mb-0 p-4">(21)</p>
-          </div>
-        </div>
-
-        <!-- filter Color  -->
-        <!-- <div class="col mt-4 filter-color border">
-          <h3 class="prod-hight">Color</h3>
-          <div class="colors">
-            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
-              <input type="color" value="#FF0000" style="width: 2rem" disabled />
-              <input type="color" value="#00FF00" style="width: 2rem" disabled />
-              <input type="color" value="#0000FF" style="width: 2rem" disabled />
-              <input type="color" value="#FFFF00" style="width: 2rem" disabled />
-              <input type="color" value="#FF00FF" style="width: 2rem" disabled />
-              <input type="color" value="#00FFFF" style="width: 2rem" disabled />
-              <input type="color" value="#800000" style="width: 2rem" disabled />
-              <input type="color" value="#808000" style="width: 2rem" disabled />
-              <input type="color" value="#008000" style="width: 2rem" disabled />
-              <input type="color" value="#800080" style="width: 2rem" disabled />
-              <input type="color" value="#008080" style="width: 2rem" disabled />
-              <input type="color" value="#000080" style="width: 2rem" disabled />
-              <input type="color" value="#FFA500" style="width: 2rem" disabled />
-              <input type="color" value="#A52A2A" style="width: 2rem" disabled />
-              <input type="color" value="#8A2BE2" style="width: 2rem" disabled />
-              <input type="color" value="#5F9EA0" style="width: 2rem" disabled />
-              <input type="color" value="#7FFF00" style="width: 2rem" disabled />
-              <input type="color" value="#D2691E" style="width: 2rem" disabled />
-              <input type="color" value="#FF7F50" style="width: 2rem" disabled />
-              <input type="color" value="#6495ED" style="width: 2rem" disabled />
-              <input type="color" value="#DC143C" style="width: 2rem" disabled />
-              <input type="color" value="#00CED1" style="width: 2rem" disabled />
-              <input type="color" value="#9400D3" style="width: 2rem" disabled />
-              <input type="color" value="#FFD700" style="width: 2rem" disabled />
-            </div>
-          </div>
-        </div> -->
-
-        <!-- Trending Products  -->
+      <div class="left-side-layout" style="width: 30%; height: 40%;">
         <div class="col mt-4 filter-color border">
           <h3 class="prod-hight">Trending Products</h3>
 
@@ -440,6 +330,154 @@
             </div>
           </div>
         </div>
+        <!-- Product categrious  -->
+        <div class="col border">
+          <h4 class="border-bottom prod-hight">Product Categories</h4>
+
+          <div class="accordion-item border-bottom py-1 p-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <p>
+                  <!-- Hidden checkbox to control the state -->
+                  <input type="checkbox" class="d-none toggle-checkbox">
+                  <!-- Icon that will rotate -->
+                  <i class="fa-solid fa-angle-right m-2 toggle-icon"></i>
+                  iTracker
+                </p>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <!-- <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse
+                within the <code>.accordion-body</code>. -->
+                <ul>
+                  <li>GPS ON</li>
+                  <li>Track</li>
+                  <li>Mini Tracker</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-bottom py-1 p-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <p>
+                  <!-- Hidden checkbox to control the state -->
+                  <input type="checkbox" class="d-none toggle-checkbox">
+                  <!-- Icon that will rotate -->
+                  <i class="fa-solid fa-angle-right m-2 toggle-icon"></i>
+                  Mini Tracker
+                </p>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <!-- <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse
+                within the <code>.accordion-body</code>. -->
+                <ul>
+                  <li>GPS ON</li>
+                  <li>Track</li>
+                  <li>Mini Tracker</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-bottom py-1 p-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapsethree">
+                <p>
+                  <!-- Hidden checkbox to control the state -->
+                  <input type="checkbox" class="d-none toggle-checkbox">
+                  <!-- Icon that will rotate -->
+                  <i class="fa-solid fa-angle-right m-2 toggle-icon"></i>
+                  GPS Tracker
+                </p>
+              </button>
+            </h2>
+            <div id="collapseThree " class="accordion-collapse collapse" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <!-- <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse
+                within the <code>.accordion-body</code>. -->
+                <ul>
+                  <li>GPS ON</li>
+                  <li>Track</li>
+                  <li>Mini Tracker</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- filter price  -->
+        <div class="col border mt-4 filter-box">
+          <label for="customRange1" class="form-label mt-4 ms-4">
+            <h3>Filter By Price</h3>
+          </label>
+          <input type="range" class="form-range p-4 inputPrice" id="customRange1" min="500" max="10000" step="1" />
+          <p class="ms-4">$500 - <span class="maxValuePrice">$10000</span></p>
+        </div>
+
+        <!-- filter Brand  -->
+        <!-- <div class="col border mt-4 filter-brand">
+          <h3 class="border-bottom prod-hight">Brand</h3>
+
+          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
+            <div>
+              <input class="form-check-input" type="checkbox" value="1" id="depen" />
+              <label class="form-check-label" for="depen">Depen</label>
+            </div>
+            <p class="mb-0 p-4">(21)</p>
+          </div>
+
+          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
+            <div>
+              <input class="form-check-input" type="checkbox" value="1" id="esit" />
+              <label class="form-check-label" for="esit">Esit</label>
+            </div>
+            <p class="mb-0 p-4">(75)</p>
+          </div>
+
+          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
+            <div>
+              <input class="form-check-input" type="checkbox" value="1" id="mund" />
+              <label class="form-check-label" for="mund">Mund</label>
+            </div>
+            <p class="mb-0 p-4">(21)</p>
+          </div>
+
+          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
+            <div>
+              <input class="form-check-input" type="checkbox" value="1" id="roose" />
+              <label class="form-check-label" for="roose">Roose</label>
+            </div>
+            <p class="mb-0 p-4">(21)</p>
+          </div>
+
+          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
+            <div>
+              <input class="form-check-input" type="checkbox" value="1" id="scora" />
+              <label class="form-check-label" for="scora">Scora</label>
+            </div>
+            <p class="mb-0 p-4">(21)</p>
+          </div>
+
+          <div class="form-check d-flex justify-content-between align-items-center">
+            <div>
+              <input class="form-check-input" type="checkbox" value="1" id="wikin" />
+              <label class="form-check-label" for="wikin">Wikin</label>
+            </div>
+            <p class="mb-0 p-4">(21)</p>
+          </div>
+        </div> -->
+
+        <!-- Trending Products  -->
+
       </div>
 
       <!--MainBox Right Layout  -->
@@ -822,7 +860,7 @@
   </section>
   <div class="footer-area mt-5 pt-54 pb-30">
     <div class="container">
-      <div class="row">
+      <div class="row small">
         <div class="col-lg-3 col-sm-6">
           <div class="single-footer-widget">
             <h3>Quick Information</h3>
@@ -841,10 +879,7 @@
                 <a href="/cdn-cgi/l/email-protection#aecbc6cfd7eecbd6cfc3dec2cb80cdc1c3"><span class="__cf_email__"
                     data-cfemail="adc8c5ccd4edc8d5ccc0ddc1c883cec2c0">[email&#160;protected]</span></a>
               </li>
-              <li>
-                <i class="ri-time-line"></i>
-                <a>Mon-Sat 8:00 AM - 8:00 PM</a>
-              </li>
+
             </ul>
 
             <ul class="social-link">
@@ -904,15 +939,11 @@
               <li>
                 <a href="products.html">Products</a>
               </li>
-              <li>
-                <a href="terms-conditions.html">Money-back Guarantee!</a>
-              </li>
+
               <li>
                 <a href="blog.html">Blog</a>
               </li>
-              <li>
-                <a href="privacy-policy.html">Accessibility</a>
-              </li>
+
               <li>
                 <a href="contact.html">Contact</a>
               </li>
@@ -923,7 +954,6 @@
         <div class="col-lg-3 col-sm-6">
           <div class="single-footer-widget">
             <h3>Download App On Mobile</h3>
-            <p>30% discount on your first order</p>
 
             <ul class="app-btn">
               <li>
