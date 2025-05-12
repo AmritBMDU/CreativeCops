@@ -32,22 +32,25 @@
                                 </a>
                             </li>
                             <!-- <li>
-                                <a href="about.html">
-                                    About US
-                                </a>
-                            </li> -->
+                <a href="about.html">
+                  About US
+                </a>
+              </li> -->
                         </ul>
                     </div>
                     <div class="col-lg-4">
                         <div class="header-right-content">
                             <ul>
                                 <li>
+                                    <!-- <a href="chatNotificationPage.html" style="color: #465ea1;"><i class="fa-solid fa-bell"> Offers -->
+                                    </i></a>
                                     <a href="chatNotificationPage.html" style="color: #465ea1;"><i
-                                            class="fa-solid fa-bell"></i></a>
+                                            class="fa-solid fa-bell"></i>
+                                        Offers</a>
                                 </li>
                                 <li>
                                     <span style="color: #465ea1;"><i class="bi bi-person-circle"></i></span>
-                                    <a href="Myaccount.html">My Account</a>
+                                    <a href="NewLogin.html">My Account</a>
                                 </li>
                             </ul>
                         </div>
@@ -58,31 +61,24 @@
         <!-- Start Top Header -->
 
         <!-- Start Middle Header -->
-        <div class=" container-fluid middle-header">
+        <div class="container-fluid middle-header py-3">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-3">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img style="height: 60px;" src="./AssetImage/Creative Cops Logo.svg" alt="Image">
-                            </a>
-                        </div>
+                <div class="d-flex justify-content-between align-items-center flex-md-row flex-column">
+
+                    <!-- Logo (Left) -->
+                    <div class="logo d-md-block d-none">
+                        <a href="index.html">
+                            <img style="height: 60px;" src="./AssetImage/Creative Cops Logo.svg" alt="Logo">
+                        </a>
                     </div>
 
-                    <div class="col-lg-5">
-                        <form class="search-box d-none">
-                            <input type="text" name="Search" placeholder="Search Products..." class="form-control">
-                            <button type="submit" class="search-btn">
-                                <i class="ri-search-line"></i>
-                                Search
-                            </button>
-                        </form>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <ul class="wish-cart">
+                    <!-- Wishlist & Cart (Right) -->
+                    <div class="d-flex  flex-row flex-lg-row align-items-center gap-4 mt-3 mt-lg-0">
+                        <ul
+                            class="wish-cart d-flex flex-row flex-sm-row justify-content-center align-items-center gap-3 list-unstyled m-0 p-0">
                             <li>
-                                <a href="wishlist.html">
+                                <a href="wishlist.html"
+                                    class="text-decoration-none text-dark d-flex flex-column align-items-center">
                                     <span class="wish-icon">
                                         <i class="ri-heart-line"></i>
                                         <span class="count">0</span>
@@ -93,7 +89,8 @@
                             </li>
 
                             <li>
-                                <a href="shoppingCart.html">
+                                <a href="shoppingCart.html"
+                                    class="text-decoration-none text-dark d-flex flex-row align-items-center">
                                     <span class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal-cart">
                                         <span class="wish-icon">
                                             <i class="ri-shopping-cart-line"></i>
@@ -106,6 +103,8 @@
                             </li>
                         </ul>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -116,18 +115,11 @@
         <div class="container-fluid bg-light header">
             <nav>
                 <ul class="navbar-nav d-flex flex-md-row flex-column justify-content-md-center justify-content-start">
-                    <li class="nav-item order-1 order-md-3 align-self-start">
-                        <div class="dropdown-center">
-                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="nav-icon-container">
-                                    <div>CATEGORIES <i class="ri-arrow-down-s-line"></i></div>
-                                </div>
+                    <li class="nav-item order-1 order-md-3 align-self-start d-md-none d-block">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img style="height: 35px;" src="./AssetImage/Creative Cops Logo.svg" alt="Logo">
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="products.html">Tracker </a></li>
-                                <li><a class="dropdown-item" href="products.html">Device </a></li>
-                                <li><a class="dropdown-item" href="products.html">GPS Tracker</a></li>
-                            </ul>
                         </div>
                     </li>
                     <li class="nav-item order-2 order-md-1">
@@ -149,11 +141,25 @@
                         </div>
                     </li>
                     <li class="nav-item order-4 order-md-4">
-                        <a class="nav-link" href="blog.html">
+                        <a class="nav-link" href="NewBog.html">
                             <div class="nav-icon-container">
                                 <div>BLOG</div>
                             </div>
                         </a>
+                    </li>
+                    <li class="nav-item  order-5 order-md-5 ">
+                        <div class="dropdown-center">
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="nav-icon-container">
+                                    <div>CATEGORIES <i class="ri-arrow-down-s-line"></i></div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="product.html">Tracker </a></li>
+                                <li><a class="dropdown-item" href="product.html">Device </a></li>
+                                <li><a class="dropdown-item" href="product.html">GPS Tracker</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item order-5">
                         <a class="nav-link" href="contact.html">

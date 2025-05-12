@@ -4,6 +4,7 @@ document
     document.querySelector(".navbar-nav").classList.toggle("show");
   });
 // Partner Slider JS
+$(document).ready(function(){
 $(".partner-slider").owlCarousel({
   loop: true,
   margin: 24,
@@ -11,6 +12,7 @@ $(".partner-slider").owlCarousel({
   dots: false,
   autoplay: true,
   smartSpeed: 1000,
+  autoplayTimeout: 2000,
   autoplayHoverPause: true,
   responsive: {
     0: {
@@ -32,4 +34,5 @@ $(".partner-slider").owlCarousel({
       items: 6,
     },
   },
-});
+})
+})
