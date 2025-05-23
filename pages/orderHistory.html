@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FAQ with Plus Minus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .faq-section {
+            max-width: 960px;
+            margin: 50px auto;
+        }
+
+        /* FAQ label on the top left */
+        .faq-label {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #465ea1;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+
+        .faq-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #465ea1;
+            border-color: #465ea1 #465ea1 #fff;
+            font-weight: 600;
+        }
+
+        .accordion-button::after {
+            content: '';
+            font-size: 1.5rem;
+            color: #465ea1;
+            font-weight: bold;
+            margin-left: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            content: '';
+            color: #465ea1;
+        }
+
+        .accordion-item {
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-contact {
+            background-color: #465ea1;
+            color: #fff;
+            padding: 10px 30px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            margin-top: 2rem;
+        }
+
+        .btn-contact:hover {
+            background-color: #465ea1;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: #465ea1;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-4">
+        <!-- Card Item Start -->
+        <div class="row mb-4 border-bottom pb-3">
+            <div class="col-12 col-md-2 text-center mb-2 mb-md-0">
+                <img src="AssetImage/product1.png" alt="GPS Tracker" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-12 col-md-10">
+                <h5 class="fw-bold text-primary">GPS Tracker</h5>
+                <p class="mb-1">JioTag Go Tracker for Android, Millions of Android Phones</p>
+                <p class="mb-1 text-muted">Order ID - 0D1234H78999009998766</p>
+                <p class="text-success">Order Delivered</p>
+            </div>
+        </div>
+        <!-- Card Item End -->
+
+        <!-- Repeat for other trackers -->
+        <div class="row mb-4 border-bottom pb-3">
+            <div class="col-12 col-md-2 text-center mb-2 mb-md-0">
+                <img src="AssetImage/product2.png" alt="iTracker" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-12 col-md-10">
+                <h5 class="fw-bold text-primary">iTracker</h5>
+                <p class="mb-1">JioTag Go Tracker for Android, Millions of Android Phones</p>
+                <p class="mb-1 text-muted">Order ID - 0D1234H78999009998766</p>
+                <p class="text-success">Order Delivered</p>
+            </div>
+        </div>
+
+        <div class="row mb-4 border-bottom pb-3">
+            <div class="col-12 col-md-2 text-center mb-2 mb-md-0">
+                <img src="AssetImage/product3.png" alt="track" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-12 col-md-10">
+                <h5 class="fw-bold text-primary">track</h5>
+                <p class="mb-1">JioTag Go Tracker for Android, Millions of Android Phones</p>
+                <p class="mb-1 text-muted">Order ID - 0D1234H78999009998766</p>
+                <p class="text-success">Order Delivered</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</body>
+
+</html>

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/product.css" />
+  <link rel="stylesheet" href="./css/product.css" />
   <title>Product</title>
   <!-- Bootstrap CSS -->
   <!-- Bootstrap CSS (always first to avoid overrides) -->
@@ -58,22 +58,18 @@
                   <span>+91 9388764245</span>
                 </a>
               </li>
-              <!-- <li>
-                                <a href="about.html">
-                                    About US
-                                </a>
-                            </li> -->
             </ul>
           </div>
           <div class="col-lg-4">
             <div class="header-right-content">
               <ul>
                 <li>
-                  <a href="chatNotificationPage.html" style="color: #465ea1;"><i class="fa-solid fa-bell"></i></a>
+                  <a href="chatNotificationPage.html" style="color: #465ea1;"><i class="fa-solid fa-bell"></i>
+                    Offers</a>
                 </li>
                 <li>
                   <span style="color: #465ea1;"><i class="bi bi-person-circle"></i></span>
-                  <a href="Myaccount.html">My Account</a>
+                  <a href="NewLogin.html">My Account</a>
                 </li>
               </ul>
             </div>
@@ -84,31 +80,23 @@
     <!-- Start Top Header -->
 
     <!-- Start Middle Header -->
-    <div class=" container-fluid middle-header">
+    <div class="container-fluid middle-header py-3">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-3">
-            <div class="logo">
-              <a href="index.html">
-                <img style="height: 60px;" src="./AssetImage/Creative Cops Logo.svg" alt="Image">
-              </a>
-            </div>
+        <div class="d-flex justify-content-between align-items-center flex-md-row flex-column">
+
+          <!-- Logo (Left) -->
+          <div class="logo d-md-block d-none">
+            <a href="index.html">
+              <img style="height: 60px;" src="./AssetImage/Creative Cops Logo.svg" alt="Logo">
+            </a>
           </div>
 
-          <div class="col-lg-5">
-            <form class="search-box d-none">
-              <input type="text" name="Search" placeholder="Search Products..." class="form-control">
-              <button type="submit" class="search-btn">
-                <i class="ri-search-line"></i>
-                Search
-              </button>
-            </form>
-          </div>
-
-          <div class="col-lg-4">
-            <ul class="wish-cart">
+          <!-- Wishlist & Cart (Right) -->
+          <div class="d-flex  flex-row flex-lg-row align-items-center gap-4 mt-3 mt-lg-0">
+            <ul
+              class="wish-cart d-flex flex-row flex-sm-row justify-content-center align-items-center gap-3 list-unstyled m-0 p-0">
               <li>
-                <a href="wishlist.html">
+                <a href="wishlist.html" class="text-decoration-none text-dark d-flex flex-column align-items-center">
                   <span class="wish-icon">
                     <i class="ri-heart-line"></i>
                     <span class="count">0</span>
@@ -119,7 +107,7 @@
               </li>
 
               <li>
-                <a href="shoppingCart.html">
+                <a href="shoppingCart.html" class="text-decoration-none text-dark d-flex flex-row align-items-center">
                   <span class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal-cart">
                     <span class="wish-icon">
                       <i class="ri-shopping-cart-line"></i>
@@ -132,6 +120,8 @@
               </li>
             </ul>
           </div>
+
+
         </div>
       </div>
     </div>
@@ -140,9 +130,42 @@
 
     <!-- Start Navber in Hearder  -->
     <div class="container-fluid bg-light header">
-      <nav class="py-2">
+      <nav>
         <ul class="navbar-nav d-flex flex-md-row flex-column justify-content-md-center justify-content-start">
-          <li class="nav-item order-1 order-md-3 align-self-start">
+          <li class="nav-item order-1 order-md-1 align-self-start ">
+            <div class="logo" style="height: 35px;">
+              <a href="index.html">
+                <img class="d-md-none d-block" style="height: 35px;" src="./AssetImage/Creative Cops Logo.svg"
+                  alt="Logo">
+              </a>
+            </div>
+          </li>
+          <li class="nav-item order-2 order-md-2">
+            <div class="dropdown-center">
+              <a class="nav-link" href="index.html">
+                <div class="nav-icon-container">
+                  <div>HOME</div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item order-3 order-md-3">
+            <div class="dropdown-center">
+              <a class="nav-link" href="about.html">
+                <div class="nav-icon-container">
+                  <div>ABOUT US</div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item order-4 order-md-4">
+            <a class="nav-link" href="NewBog.html">
+              <div class="nav-icon-container">
+                <div>BLOG</div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item nav-dropdown order-5 order-md-5 ">
             <div class="dropdown-center">
               <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                 <div class="nav-icon-container">
@@ -156,31 +179,6 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item order-2 order-md-1">
-            <div class="dropdown-center">
-              <a class="nav-link" href="/" data-bs-toggle="dropdown" aria-expanded="false">
-                <div class="nav-icon-container">
-                  <div>HOME</div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item order-3 order-md-2">
-            <div class="dropdown-center">
-              <a class="nav-link" href="about.html">
-                <div class="nav-icon-container">
-                  <div>ABOUT US</div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item order-4 order-md-4">
-            <a class="nav-link" href="#">
-              <div class="nav-icon-container">
-                <div>BLOG</div>
-              </div>
-            </a>
-          </li>
           <li class="nav-item order-5">
             <a class="nav-link" href="contact.html">
               <div class="nav-icon-container">
@@ -192,128 +190,30 @@
         </ul>
       </nav>
     </div>
+    <script>
+      const navDropdown = document.querySelectorAll('.nav-dropdown');
+      navDropdown.forEach((nav) => {
+        nav.addEventListener('click', () => {
+          if (nav.style.overflow == "visible") {
+            nav.style.overflow = "hidden";
+          } else {
+            nav.style.overflow = "visible";
+          }
+        })
+      })
+    </script>
 
     <!-- End  -->
   </header>
   <div class="container-md mt-5">
     <p>Home / <span class="common-color">Products</span></p>
     <!-- Layout  -->
-    <div class="row g-3 mt-5">
+    <div class="row g-3 mt-5  ">
       <!--MainBox Left Layout  -->
-      <div class="left-side-layout" style="width: 30%">
-        <!-- Product categrious  -->
-        <div class="col border">
-          <h4 class="border-bottom prod-hight">Product Categories</h4>
-          <p class="border-bottom py-1 p-2">
-            <i class="fa-solid fa-angle-right m-2"></i>iTracker
-          </p>
-          <p class="border-bottom py-1 p-2">
-            <i class="fa-solid fa-angle-right m-2"></i>Mini Tracker
-          </p>
-          <p class="border-bottom py-1 p-2">
-            <i class="fa-solid fa-angle-right m-2"></i>GPS Tracker
-          </p>
-        </div>
-
-        <!-- filter price  -->
-        <div class="col border mt-4 filter-box">
-          <label for="customRange1" class="form-label mt-4 ms-4">
-            <h3>Filter By Price</h3>
-          </label>
-          <input type="range" class="form-range p-4 inputPrice" id="customRange1" min="500" max="10000" step="1" />
-          <p class="ms-4">$500 - <span class="maxValuePrice">$10000</span></p>
-        </div>
-
-        <!-- filter Brand  -->
-        <div class="col border mt-4 filter-brand">
-          <h3 class="border-bottom prod-hight">Brand</h3>
-
-          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
-            <div>
-              <input class="form-check-input" type="checkbox" value="1" id="depen" />
-              <label class="form-check-label" for="depen">Depen</label>
-            </div>
-            <p class="mb-0 p-4">(21)</p>
-          </div>
-
-          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
-            <div>
-              <input class="form-check-input" type="checkbox" value="1" id="esit" />
-              <label class="form-check-label" for="esit">Esit</label>
-            </div>
-            <p class="mb-0 p-4">(75)</p>
-          </div>
-
-          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
-            <div>
-              <input class="form-check-input" type="checkbox" value="1" id="mund" />
-              <label class="form-check-label" for="mund">Mund</label>
-            </div>
-            <p class="mb-0 p-4">(21)</p>
-          </div>
-
-          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
-            <div>
-              <input class="form-check-input" type="checkbox" value="1" id="roose" />
-              <label class="form-check-label" for="roose">Roose</label>
-            </div>
-            <p class="mb-0 p-4">(21)</p>
-          </div>
-
-          <div class="form-check border-bottom d-flex justify-content-between align-items-center">
-            <div>
-              <input class="form-check-input" type="checkbox" value="1" id="scora" />
-              <label class="form-check-label" for="scora">Scora</label>
-            </div>
-            <p class="mb-0 p-4">(21)</p>
-          </div>
-
-          <div class="form-check d-flex justify-content-between align-items-center">
-            <div>
-              <input class="form-check-input" type="checkbox" value="1" id="wikin" />
-              <label class="form-check-label" for="wikin">Wikin</label>
-            </div>
-            <p class="mb-0 p-4">(21)</p>
-          </div>
-        </div>
-
-        <!-- filter Color  -->
+      <div class="left-side-layout col-md-4 " style="width: 30%; height: 40%;">
         <!-- <div class="col mt-4 filter-color border">
-          <h3 class="prod-hight">Color</h3>
-          <div class="colors">
-            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
-              <input type="color" value="#FF0000" style="width: 2rem" disabled />
-              <input type="color" value="#00FF00" style="width: 2rem" disabled />
-              <input type="color" value="#0000FF" style="width: 2rem" disabled />
-              <input type="color" value="#FFFF00" style="width: 2rem" disabled />
-              <input type="color" value="#FF00FF" style="width: 2rem" disabled />
-              <input type="color" value="#00FFFF" style="width: 2rem" disabled />
-              <input type="color" value="#800000" style="width: 2rem" disabled />
-              <input type="color" value="#808000" style="width: 2rem" disabled />
-              <input type="color" value="#008000" style="width: 2rem" disabled />
-              <input type="color" value="#800080" style="width: 2rem" disabled />
-              <input type="color" value="#008080" style="width: 2rem" disabled />
-              <input type="color" value="#000080" style="width: 2rem" disabled />
-              <input type="color" value="#FFA500" style="width: 2rem" disabled />
-              <input type="color" value="#A52A2A" style="width: 2rem" disabled />
-              <input type="color" value="#8A2BE2" style="width: 2rem" disabled />
-              <input type="color" value="#5F9EA0" style="width: 2rem" disabled />
-              <input type="color" value="#7FFF00" style="width: 2rem" disabled />
-              <input type="color" value="#D2691E" style="width: 2rem" disabled />
-              <input type="color" value="#FF7F50" style="width: 2rem" disabled />
-              <input type="color" value="#6495ED" style="width: 2rem" disabled />
-              <input type="color" value="#DC143C" style="width: 2rem" disabled />
-              <input type="color" value="#00CED1" style="width: 2rem" disabled />
-              <input type="color" value="#9400D3" style="width: 2rem" disabled />
-              <input type="color" value="#FFD700" style="width: 2rem" disabled />
-            </div>
-          </div>
-        </div> -->
-
-        <!-- Trending Products  -->
-        <div class="col mt-4 filter-color border">
           <h3 class="prod-hight">Trending Products</h3>
-
+          
           <div class="card mb-3 border-0 border-bottom" style="max-width: 540px">
             <div class="row g-0">
               <div class="col-md-4">
@@ -439,15 +339,92 @@
               </div>
             </div>
           </div>
+        </div> -->
+        <!-- Product categrious  -->
+        <div class="col border">
+          <h4 class="border-bottom prod-hight">Product Categories</h4>
+
+          <div class="accordion-item border-bottom py-1 p-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <p class="mb-1">
+                  <!-- Hidden checkbox to control the state -->
+                  <!-- Icon that will rotate -->
+                  <i class="fa-solid fa-angle-right m-2 toggle-icon"></i>
+                  iTracker
+                </p>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <label><input type="checkbox"> GPS ON</label>
+                <label><input type="checkbox"> Track</label>
+                <label><input type="checkbox"> Mini Tracker</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-bottom py-1 p-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <p class="mb-1">
+                  <!-- Icon that will rotate -->
+                  <i class="fa-solid fa-angle-right m-2 toggle-icon"></i>
+                  Mini Tracker
+                </p>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <label><input type="checkbox"> GPS ON</label>
+                <label><input type="checkbox"> Track</label>
+                <label><input type="checkbox"> Mini Tracker</label>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-bottom py-1 p-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapsethree">
+                <p class="mb-1">
+                  <!-- Icon that will rotate -->
+                  <i class="fa-solid fa-angle-right m-2 toggle-icon"></i>
+                  GPS Tracker
+                </p>
+              </button>
+            </h2>
+            <div id="collapseThree " class="accordion-collapse collapse" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+                <label><input type="checkbox"> GPS ON</label>
+                <label><input type="checkbox"> Track</label>
+                <label><input type="checkbox"> Mini Tracker</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- filter price  -->
+        <div class="col border mt-4 filter-box">
+          <label for="customRange1" class="form-label mt-4 ms-4">
+            <h3>Filter By Price</h3>
+          </label>
+          <input type="range" class="form-range p-4 inputPrice" id="customRange1" min="500" max="10000" step="1" />
+          <p class="ms-4">$500 - <span class="maxValuePrice">$10000</span></p>
         </div>
       </div>
 
       <!--MainBox Right Layout  -->
-      <div class="col-sm-8">
+      <div class=" col-md-8  ">
         <!-- Right Layout  -->
 
         <!-- banner tools offer  -->
-        <div class="container border mb-3 p-0 ms-3">
+        <div class="container-fluid border mb-3 p-0 d-none d-md-block ">
           <div class="banner bg-image text-white d-flex flex-column justify-content-center align-items-start p-5">
             <p class="fs-5 font-w-off">
               Sale offer <span class="common-color">-30% off</span>
@@ -458,12 +435,12 @@
         </div>
 
         <!--select show products  -->
-        <div class="container mb-4 py-3 d-flex justify-content-between gap-4">
+        <div class="container  py-3 d-flex justify-content-between gap-4">
           <div class="titile-text d-flex gap-2" style="width: 50%">
             <p>Showing 16 of 60 products</p>
           </div>
 
-          <div class="col-md-4 mb-4" style="width: 50%">
+          <div class="col-md-5 mb-4" style="width: 50%">
             <select id="dropdown1" class="form-select" style="width: 100%">
               <option selected disabled>Default Sorting</option>
               <option>iTrack</option>
@@ -474,9 +451,9 @@
         </div>
 
         <!-- Card products  -->
-        <div class="mb-3 mt-4 d-flex flex-wrap gap-4">
+        <div class=" row mb-3  g-4 ">
           <!-- card1 -->
-          <a href="/product.html" class="text-decoration-none text-dark" style="width: 48%">
+          <a href="product.html" class="text-decoration-none text-dark col-md-6 col-12">
             <div class="card">
               <img src="AssetImage/product1.png" class="card-img-top" alt="product" />
               <div class="card-body">
@@ -495,13 +472,24 @@
                   <span>In Stock</span>
                 </p>
                 <div>
-                  <button class="btn btn-light border" style="color: gray">
-                    <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                  <!-- <button class="btn btn-light border">
+                    <i class=" fa-solid fa-cart-plus"></i> Add To Cart
+                  </button> -->
+
+                  <button href="" class="default-btn">
+                    <div class="btn-c">
+                      <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                    </div>
+                    <div class="btn-hc"></div>
+                    <div class="btn-vc"></div>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+
+                  <button class="btn btn-light border btn ms-2 br-2 ">
                     <i class="fa-regular fa-heart fs-5"></i>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+
+
+                  <button class="btn btn-light border btn  ms-2 br-2">
                     <i class="fa-solid fa-eye"></i>
                   </button>
                 </div>
@@ -510,7 +498,7 @@
           </a>
 
           <!-- card2 -->
-          <a href="/product.html" class="text-decoration-none text-dark" style="width: 48%">
+          <a href="product.html" class="text-decoration-none text-dark col-md-6 col-12">
             <div class="card">
               <img src="AssetImage/product2.png" class="card-img-top" alt="product" />
               <div class="card-body">
@@ -529,13 +517,19 @@
                   <span>In Stock</span>
                 </p>
                 <div>
-                  <button class="btn btn-light border" style="color: gray">
-                    <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                  <button href="" class="default-btn">
+                    <div class="btn-c">
+                      <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                    </div>
+                    <div class="btn-hc"></div>
+                    <div class="btn-vc"></div>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+                  <button class="btn btn-light border btn ms-2 br-2">
                     <i class="fa-regular fa-heart fs-5"></i>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+
+
+                  <button class="btn btn-light border btn ms-2 br-2">
                     <i class="fa-solid fa-eye"></i>
                   </button>
                 </div>
@@ -544,7 +538,7 @@
           </a>
 
           <!-- card3 -->
-          <a href="/product.html" class="text-decoration-none text-dark" style="width: 48%">
+          <a href="product.html" class="text-decoration-none text-dark col-md-6 col-12">
             <div class="card">
               <img src="AssetImage/product3.png" class="card-img-top" alt="product" />
               <div class="card-body">
@@ -563,13 +557,17 @@
                   <span>In Stock</span>
                 </p>
                 <div>
-                  <button class="btn btn-light border" style="color: gray">
-                    <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                  <button href="" class="default-btn">
+                    <div class="btn-c">
+                      <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                    </div>
+                    <div class="btn-hc"></div>
+                    <div class="btn-vc"></div>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+                  <button class="btn btn-light border btn ms-2 br-2">
                     <i class="fa-regular fa-heart fs-5"></i>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+                  <button class="btn btn-light border btn ms-2 br-2">
                     <i class="fa-solid fa-eye"></i>
                   </button>
                 </div>
@@ -578,7 +576,7 @@
           </a>
 
           <!-- card4 -->
-          <a href="/product.html" class="text-decoration-none text-dark" style="width: 48%">
+          <a href="product.html" class="text-decoration-none text-dark col-md-6 col-12">
             <div class="card">
               <img src="AssetImage/product3.png" class="card-img-top" alt="product" />
               <div class="card-body">
@@ -597,13 +595,17 @@
                   <span>In Stock</span>
                 </p>
                 <div>
-                  <button class="btn btn-light border" style="color: gray">
-                    <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                  <button href="" class="default-btn">
+                    <div class="btn-c">
+                      <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                    </div>
+                    <div class="btn-hc"></div>
+                    <div class="btn-vc"></div>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+                  <button class="btn btn-light border  btn ms-2 br-2">
                     <i class="fa-regular fa-heart fs-5"></i>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+                  <button class="btn btn-light border btn ms-2 br-2">
                     <i class="fa-solid fa-eye"></i>
                   </button>
                 </div>
@@ -612,7 +614,7 @@
           </a>
 
           <!-- card5 -->
-          <a href="/product.html" class="text-decoration-none text-dark" style="width: 48%">
+          <a href="product.html" class="text-decoration-none text-dark col-md-6 col-12">
             <div class="card">
               <img src="AssetImage/product4.jpg" class="card-img-top" alt="product" />
               <div class="card-body">
@@ -631,13 +633,17 @@
                   <span>In Stock</span>
                 </p>
                 <div>
-                  <button class="btn btn-light border" style="color: gray">
-                    <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                  <button href="" class="default-btn">
+                    <div class="btn-c">
+                      <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                    </div>
+                    <div class="btn-hc"></div>
+                    <div class="btn-vc"></div>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+                  <button class="btn btn-light border btn ms-2 br-2">
                     <i class="fa-regular fa-heart fs-5"></i>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+                  <button class="btn btn-light border btn ms-2 br-2">
                     <i class="fa-solid fa-eye"></i>
                   </button>
                 </div>
@@ -646,7 +652,7 @@
           </a>
 
           <!-- card6 -->
-          <a href="/product.html" class="text-decoration-none text-dark" style="width: 48%">
+          <a href="product.html" class="text-decoration-none text-dark col-md-6 col-12">
             <div class="card">
               <img src="AssetImage/product5.jpg" class="card-img-top" alt="product" />
               <div class="card-body">
@@ -665,13 +671,17 @@
                   <span>In Stock</span>
                 </p>
                 <div>
-                  <button class="btn btn-light border" style="color: gray">
-                    <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                  <button href="" class="default-btn">
+                    <div class="btn-c">
+                      <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                    </div>
+                    <div class="btn-hc"></div>
+                    <div class="btn-vc"></div>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+                  <button class="btn btn-light border btn ms-2 br-2">
                     <i class="fa-regular fa-heart fs-5"></i>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+                  <button class="btn btn-light border btn ms-2 br-2">
                     <i class="fa-solid fa-eye"></i>
                   </button>
                 </div>
@@ -680,7 +690,7 @@
           </a>
 
           <!-- card7 -->
-          <a href="/product.html" class="text-decoration-none text-dark" style="width: 48%">
+          <a href="product.html" class="text-decoration-none text-dark col-md-6 col-12">
             <div class="card">
               <img src="AssetImage/product6.png" class="card-img-top" alt="product" />
               <div class="card-body">
@@ -699,24 +709,28 @@
                   <span>In Stock</span>
                 </p>
                 <div>
-                  <button class="btn btn-light border" style="color: gray">
-                    <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                  <button href="" class="default-btn">
+                    <div class="btn-c">
+                      <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                    </div>
+                    <div class="btn-hc"></div>
+                    <div class="btn-vc"></div>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+                  <button class="btn btn-light border btn ms-2 br-2">
                     <i class="fa-regular fa-heart fs-5"></i>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+                  <button class="btn btn-light border btn ms-2 br-2">
                     <i class="fa-solid fa-eye"></i>
                   </button>
                 </div>
               </div>
             </div>
           </a>
-
+          <!-- AssetImage/product7.png -->
           <!-- card8 -->
-          <a href="/product.html" class="text-decoration-none text-dark" style="width: 48%">
+          <a href="product.html" class="text-decoration-none text-dark col-md-6 col-12">
             <div class="card">
-              <img src="AssetImage/product7.png" class="card-img-top" alt="product" />
+              <img src="AssetImage/product6.png" class="card-img-top" alt="product" />
               <div class="card-body">
                 <h5 class="card-title">Mini Tracker</h5>
                 <div class="common-color mb-2">
@@ -733,25 +747,30 @@
                   <span>In Stock</span>
                 </p>
                 <div>
-                  <button class="btn btn-light border" style="color: gray">
-                    <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                  <button href="" class="default-btn">
+                    <div class="btn-c">
+                      <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                    </div>
+                    <div class="btn-hc"></div>
+                    <div class="btn-vc"></div>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+                  <button class="btn btn-light btn border ms-2 br-2">
                     <i class="fa-regular fa-heart fs-5"></i>
                   </button>
-                  <button class="btn btn-light border ms-2 br-2" style="color: gray">
+                  <button class="btn btn-light border btn ms-2 br-2">
                     <i class="fa-solid fa-eye"></i>
                   </button>
                 </div>
               </div>
             </div>
           </a>
+
         </div>
 
       </div>
 
       <!-- NextBtn -->
-      <div class="nextBtn d-flex mt-5 mb-5 gap-3 justify-content-center">
+      <div class="nextBtn d-flex mt-5 mb-5 gap-3 justify-content-center order-2 ">
         <div class="d-flex justify-content-center align-items-center text-white fw-bold common-colorbg nextBtnHover"
           style="
               border: 1px solid #000;
@@ -784,12 +803,374 @@
         </div>
       </div>
     </div>
+
+
   </div>
+  <section class="best-seller-area pb-30">
+    <div class="container">
+      <div class="section-title">
+        <h2>Trending Products</h2>
+      </div>
+      <div class="best-product-slider Beast-Saler owl-carousel owl-theme">
+        <div class="single-products">
+          <div class="product-img">
+            <a href="product.html">
+              <img src="./AssetImage/product1.png" alt="Image">
+            </a>
+
+            <span class="hot new">-30%</span>
+          </div>
+
+          <div class="product-content">
+            <a href="product.html" class="title">
+              GPS Tracker
+            </a>
+
+            <ul class="products-rating">
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <a href="product.html">
+                  (03 Review)
+                </a>
+              </li>
+            </ul>
+
+            <ul class="products-price">
+              <li>
+                ₹119.00
+                <Del>₹219.00</Del>
+              </li>
+              <li>
+                <span>In Stock</span>
+              </li>
+            </ul>
+
+            <ul class="products-cart-wish-view">
+              <li>
+                <a href="shopping-cart.html" class="default-btn">
+                  <div class="btn-c"><i class="ri-shopping-cart-line"></i> Add To Cart
+                  </div>
+                  <div class="btn-hc"></div>
+                  <div class="btn-vc"></div>
+                </a>
+              </li>
+              <li>
+                <a href="wishlist.html" class="wish-btn">
+                  <i class="ri-heart-line"></i>
+                </a>
+              </li>
+              <li>
+                <button class="eye-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="ri-eye-line"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="single-products">
+          <div class="product-img">
+            <a href="product.html">
+              <img src="./AssetImage/product2.png" alt="Image">
+            </a>
+
+            <span class="hot new">-20%</span>
+          </div>
+
+          <div class="product-content">
+            <a href="product.html" class="title">
+              Mini Tracker
+            </a>
+
+            <ul class="products-rating">
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <a href="product.html">
+                  (03 Review)
+                </a>
+              </li>
+            </ul>
+
+            <ul class="products-price">
+              <li>
+                ₹130.00
+                <Del>₹250.00</Del>
+              </li>
+              <li>
+                <span>In Stock</span>
+              </li>
+            </ul>
+
+            <ul class="products-cart-wish-view">
+              <li>
+                <a href="shopping-cart.html" class="default-btn">
+                  <div class="btn-c"><i class="ri-shopping-cart-line"></i> Add To Cart
+                  </div>
+                  <div class="btn-hc"></div>
+                  <div class="btn-vc"></div>
+                </a>
+              </li>
+              <li>
+                <a href="wishlist.html" class="wish-btn">
+                  <i class="ri-heart-line"></i>
+                </a>
+              </li>
+              <li>
+                <button class="eye-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="ri-eye-line"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="single-products">
+          <div class="product-img">
+            <a href="product.html">
+              <img src="./AssetImage/product3.png" alt="Image">
+            </a>
+
+            <span class="hot new">-30%</span>
+          </div>
+
+          <div class="product-content">
+            <a href="product.html" class="title">
+              Track
+            </a>
+
+            <ul class="products-rating">
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <a href="product.html">
+                  (03 Review)
+                </a>
+              </li>
+            </ul>
+
+            <ul class="products-price">
+              <li>
+                ₹150.00
+                <Del>₹200.00</Del>
+              </li>
+              <li>
+                <span>In Stock</span>
+              </li>
+            </ul>
+
+            <ul class="products-cart-wish-view">
+              <li>
+                <a href="shopping-cart.html" class="default-btn">
+                  <div class="btn-c"><i class="ri-shopping-cart-line"></i> Add To Cart
+                  </div>
+                  <div class="btn-hc"></div>
+                  <div class="btn-vc"></div>
+                </a>
+              </li>
+              <li>
+                <a href="wishlist.html" class="wish-btn">
+                  <i class="ri-heart-line"></i>
+                </a>
+              </li>
+              <li>
+                <button class="eye-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="ri-eye-line"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="single-products">
+          <div class="product-img">
+            <a href="product.html">
+              <img src="./AssetImage/product4.jpg" alt="Image">
+            </a>
+
+            <span class="hot new">-10%</span>
+          </div>
+
+          <div class="product-content">
+            <a href="product.html" class="title">
+              iTrack
+            </a>
+
+            <ul class="products-rating">
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <a href="product.html">
+                  (03 Review)
+                </a>
+              </li>
+            </ul>
+
+            <ul class="products-price">
+              <li>
+                ₹111.00
+                <Del>₹222.00</Del>
+              </li>
+              <li>
+                <span>In Stock</span>
+              </li>
+            </ul>
+
+            <ul class="products-cart-wish-view">
+              <li>
+                <a href="shopping-cart.html" class="default-btn">
+                  <div class="btn-c"><i class="ri-shopping-cart-line"></i> Add To Cart
+                  </div>
+                  <div class="btn-hc"></div>
+                  <div class="btn-vc"></div>
+                </a>
+              </li>
+              <li>
+                <a href="wishlist.html" class="wish-btn">
+                  <i class="ri-heart-line"></i>
+                </a>
+              </li>
+              <li>
+                <button class="eye-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="ri-eye-line"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="single-products">
+          <div class="product-img">
+            <a href="product.html">
+              <img src="./AssetImage/product5.jpg" alt="Image">
+            </a>
+
+            <span class="hot">Hot</span>
+          </div>
+
+          <div class="product-content">
+            <a href="product.html" class="title">
+              GPS Tracker
+            </a>
+
+            <ul class="products-rating">
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <i class="ri-star-fill"></i>
+              </li>
+              <li>
+                <a href="product.html">
+                  (03 Review)
+                </a>
+              </li>
+            </ul>
+
+            <ul class="products-price">
+              <li>
+                ₹222.00
+                <Del>₹250.00</Del>
+              </li>
+              <li>
+                <span>In Stock</span>
+              </li>
+            </ul>
+
+            <ul class="products-cart-wish-view">
+              <li>
+                <a href="shopping-cart.html" class="default-btn">
+                  <div class="btn-c"><i class="ri-shopping-cart-line"></i> Add To Cart
+                  </div>
+                  <div class="btn-hc"></div>
+                  <div class="btn-vc"></div>
+                </a>
+              </li>
+              <li>
+                <a href="wishlist.html" class="wish-btn">
+                  <i class="ri-heart-line"></i>
+                </a>
+              </li>
+              <li>
+                <button class="eye-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="ri-eye-line"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 
   <section class="subscribe-area ptb-54">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-2">
+        <div class="col-sm-2">
           <div class="logo">
             <a href="index.html">
               <img src="./AssetImage/Creative Cops Logo.svg" alt="Image">
@@ -797,7 +1178,7 @@
           </div>
         </div>
 
-        <div class="col-lg-5">
+        <div class="col-sm-5">
           <div class="subscribe-content">
             <span>30% Discount For Your First Order</span>
             <h3>Subscribe To Our Newsletter</h3>
@@ -805,7 +1186,7 @@
           </div>
         </div>
 
-        <div class="col-lg-5">
+        <div class="col-sm-5">
           <form class="newsletter-form" data-toggle="validator">
             <input type="email" class="form-control" placeholder="Your email address" name="EMAIL" required
               autocomplete="off">
@@ -822,7 +1203,7 @@
   </section>
   <div class="footer-area mt-5 pt-54 pb-30">
     <div class="container">
-      <div class="row">
+      <div class="row small">
         <div class="col-lg-3 col-sm-6">
           <div class="single-footer-widget">
             <h3>Quick Information</h3>
@@ -841,10 +1222,7 @@
                 <a href="/cdn-cgi/l/email-protection#aecbc6cfd7eecbd6cfc3dec2cb80cdc1c3"><span class="__cf_email__"
                     data-cfemail="adc8c5ccd4edc8d5ccc0ddc1c883cec2c0">[email&#160;protected]</span></a>
               </li>
-              <li>
-                <i class="ri-time-line"></i>
-                <a>Mon-Sat 8:00 AM - 8:00 PM</a>
-              </li>
+
             </ul>
 
             <ul class="social-link">
@@ -904,15 +1282,11 @@
               <li>
                 <a href="products.html">Products</a>
               </li>
-              <li>
-                <a href="terms-conditions.html">Money-back Guarantee!</a>
-              </li>
+
               <li>
                 <a href="blog.html">Blog</a>
               </li>
-              <li>
-                <a href="privacy-policy.html">Accessibility</a>
-              </li>
+
               <li>
                 <a href="contact.html">Contact</a>
               </li>
@@ -923,7 +1297,6 @@
         <div class="col-lg-3 col-sm-6">
           <div class="single-footer-widget">
             <h3>Download App On Mobile</h3>
-            <p>30% discount on your first order</p>
 
             <ul class="app-btn">
               <li>
@@ -963,12 +1336,49 @@
   <!-- Start Copy Right Area -->
   <div class="copy-right-area">
     <div class="container">
-      <p><a href="https://envytheme.com/" target="_blank">&copy; Creative Crops All Right Reserved Desiged By
+      <p><a href="https://bmdu.net/" target="_blank">&copy; Creative Crops All Right Reserved Desiged By
           BMDU</a>
       </p>
     </div>
   </div>
-  <script src="js/product.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ✅ jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- ✅ Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- ✅ Your Owl Carousel Init -->
+  <script>
+    $(document).ready(function () {
+      $('.Beast-Saler').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 24,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        smartSpeed: 1000,
+        autoplayHoverPause: true,
+        navText: [
+          "<i class='ri-arrow-left-s-line'></i>",
+          "<i class='ri-arrow-right-s-line'></i>"
+        ],
+        responsive: {
+          0: { items: 1 },
+          414: { items: 2 },
+          576: { items: 2 },
+          768: { items: 3 },
+          992: { items: 4 },
+          1200: { items: 4 }
+        }
+      });
+    });
+  </script>
+
+
+  <script src="js/products.js"></script>
   <script src="script.js"></script>
 </body>
 

@@ -1,7 +1,9 @@
 .common-color {
   color: #465ea1;
 }
-
+.common-color i{
+ color: yellow;
+}
 .common-colorbg {
   background-color: #465ea1;
 }
@@ -11,7 +13,11 @@
   padding: 1.5rem;
   font-weight: 500;
 }
-
+.accordion-body{
+    display: flex;
+      flex-direction: column;
+      gap: 5px;
+}
 .left-side-layout p:hover {
   color: #465ea1;
   cursor: pointer;
@@ -19,7 +25,7 @@
 
 .left-side-layout {
   /* background-color: #ff6a00; */
-  margin-bottom: 50%;
+  margin-bottom: 10%;
 }
 
 .form-check {
@@ -53,13 +59,37 @@
 /* <style> */
 .bg-image {
   background-image: url('../AssetImage/bg-5.jpg');
-  /* Replace with your actual image URL */
   background-size: cover;
   background-position: center;
-  height: 300px;
-  /* Adjust height as needed */
+  /* height: 300px; */
   position: relative;
+  width: 121%;
 }
+
+ .card .card-body .default-btn{
+  padding: 12px 20px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    background-color: rgba(0, 0, 0, 0);
+    color: #9c9c9c;
+}
+
+.card .card-body .btn{
+  border-color:#9c9c9c ;
+   
+    
+}
+.card .card-body .btn:hover {
+  background-color: #465ea1;
+
+    color:white;
+  border-color: #465ea1;
+}
+
+.card .card-body .btn .fa-heart:hover{
+color: red;
+}
+
 
 .bg-image::before {
   content: "";
@@ -69,7 +99,6 @@
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
-  /* Optional: dark overlay */
   z-index: 1;
 }
 

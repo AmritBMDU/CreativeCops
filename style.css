@@ -334,6 +334,10 @@ a:hover {
 	text-align: center;
 }
 
+.middle-header li a .wish-icon i:hover {
+	color: red;
+}
+
 .middle-header .wish-cart li a .wish-icon .count,
 .middle-header .wish-cart li .cart .wish-icon .count {
 	position: absolute;
@@ -438,7 +442,7 @@ img {
 	.nav-bar-toggle {
 		position: absolute;
 		right: 15px;
-		top: 13px;
+		/* top: 13px; */
 		font-size: 20px;
 		color: white;
 	}
@@ -455,6 +459,7 @@ img {
 .nav-item {
 	padding: 0 15px;
 	white-space: nowrap;
+	/* overflow: visible !important; */
 }
 
 .form-control {
@@ -502,8 +507,8 @@ img {
 }
 
 .nav-link {
-	font-size: 15px;
-	font-weight: 20px;
+	font-size: 15px !important;
+	font-weight: 600 !important;
 }
 
 .nav-icon-container:hover {
@@ -2088,7 +2093,7 @@ a {
 
 .section-title {
 	/* margin-bottom: 30px; */
-	margin-top: -5px;
+	margin-top: 10px;
 	position: relative
 }
 
@@ -2409,7 +2414,8 @@ Sale Discount Bg Style
 	height: 30px;
 	line-height: 30px;
 	font-size: 16px;
-	top: 3px
+	top: 3px;
+	color: red;
 }
 
 .single-products.new-arrivals .product-content .products-cart-wish-view li .eye-btn {
@@ -2480,7 +2486,7 @@ Sale Discount Bg Style
 }
 
 .single-products .product-content .products-rating li i {
-	color: #465ea1
+	color: rgba(255, 255, 0, 0.699)
 }
 
 .single-products .product-content .products-rating li a {
@@ -2560,12 +2566,13 @@ Sale Discount Bg Style
 	position: relative;
 	top: 6px;
 	border-radius: 50px;
-	font-size: 22px
+	font-size: 22px;
+	color: red;
 }
 
 .single-products .product-content .products-cart-wish-view li .wish-btn:hover {
 	border-color: #465ea1;
-	background-color: #465ea1;
+	background-color: red;
 	color: #fff
 }
 
@@ -2686,7 +2693,7 @@ Sale Discount Bg Style
 }
 
 .trending-product-list .single-list .product-content .products-rating li i {
-	color: #465ea1
+	color: yellow
 }
 
 .trending-product-list .single-list .product-content .products-rating li a {
@@ -2848,6 +2855,12 @@ img {
 	padding: 16px 30px;
 	font-weight: 400;
 	background-color: #465ea1;
+
+	/* padding: 12px 20px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    background-color: rgba(0, 0, 0, 0);
+    color: #9c9c9c; */
 }
 
 .single-blog .blog-content .default-btn {
@@ -2946,7 +2959,7 @@ img {
 }
 
 .partner-wrap {
-	border: 1px solid #1b0a0a;
+	border: white;
 	padding: 30px;
 }
 
@@ -3024,7 +3037,7 @@ Trending Products Style
 	position: absolute;
 	top: 0;
 	left: 0;
-	max-width: 112px;
+	max-width: 98px;
 }
 
 .trending-product-list .single-list .product-content .title {
@@ -3069,7 +3082,7 @@ Trending Products Style
 }
 
 .trending-product-list .single-list .product-content .products-rating li i {
-	color: #465ea1;
+	color: yellow;
 }
 
 .trending-product-list .single-list .product-content .products-rating li a {
@@ -3085,8 +3098,21 @@ Trending Products Style
 }
 
 .trending-product-list.special-product-list .single-list img {
-	max-width: 100px;
+	max-width: 94px;
 }
+
+
+/* Initial icon rotation (closed state) */
+.toggle-icon {
+	transition: transform 0.3s ease;
+	transform: rotate(0deg);
+}
+
+/* Rotate icon when accordion is expanded */
+.accordion-button:not(.collapsed) .toggle-icon {
+	transform: rotate(90deg);
+}
+
 
 /* End  */
 /* Start Subscrib Area  */
@@ -3167,14 +3193,14 @@ Trending Products Style
 Footer Area Style
 ======================================================*/
 a {
-	color: rgb(156, 156, 156);
+	/* color:rgb(255 255 255); */
 	transition: 0.5s;
 	text-decoration: none;
 }
 
 
 a:hover {
-	color: #465ea1;
+	color: #11131a;
 	text-decoration: none;
 }
 
@@ -3285,12 +3311,13 @@ Copy Right Area Style
 .copy-right-area {
 	border-top: 1px solid #dddddd;
 	padding-top: 15px;
-	padding-bottom: 15px;
+	/* padding-bottom: 15px; */
 	text-align: center;
 }
 
 .copy-right-area p a {
 	color: #465ea1;
+	font-size: 15px;
 }
 
 .copy-right-area p a:hover {
@@ -3315,4 +3342,10 @@ Copy Right Area Style
 	--bs-btn-disabled-color: #fff;
 	--bs-btn-disabled-bg: #465ea1;
 	--bs-btn-disabled-border-color: #465ea1;
+}
+
+.footer-area {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
 }

@@ -57,36 +57,36 @@ const products = [
   // Add more products...
 ];
 
-const productList = document.getElementById("product-list");
+// const productList = document.getElementById("product-list");
 
-products.forEach((product) => {
-  const stars = "★".repeat(product.rating) + "☆".repeat(5 - product.rating);
-  const stockText = product.inStock ? "In Stock" : "Out of Stock";
+// products.forEach((product) => {
+//   const stars = "★".repeat(product.rating) + "☆".repeat(5 - product.rating);
+//   const stockText = product.inStock ? "In Stock" : "Out of Stock";
 
-  const cardHTML = `
-<div class="product-card custom-card">
-    <img src="${product.image}" alt="${product.title}" class="w-100" style="height: 250px; object-fit: cover;"/>
-    <div class="product-title border-top pt-3">${product.title}</div>
-    <div class="d-flex align-items-center mb-2">
-        <div class="text-warning">${stars}</div>
-        <small class="text-muted ms-2">(${product.reviews} Reviews)</small>
-    </div>
-    <div class="mb-2">
-        <span class="price">$${product.price}</span>
-        <span class="price-original">$${product.originalPrice}</span>
-        <span class="in-stock">${stockText}</span>
-    </div>
-    <div class="card-footer-btns mt-3">
-        <button class="btn d-flex gap-2 px-4 btn-outline-secondary">
-            <i class="bi bi-cart2 me-1"></i> Add_To_Cart
-        </button>
-        <button class="icon-btn"><i class="bi bi-heart"></i></button>
-        <button class="icon-btn"><i class="bi bi-eye"></i></button>
-    </div>
-</div>
-`;
-  productList.insertAdjacentHTML("beforeend", cardHTML);
-});
+//   const cardHTML = `
+// <div class="product-card custom-card">
+//     <img src="${product.image}" alt="${product.title}" class="w-100" style="height: 250px; object-fit: cover;"/>
+//     <div class="product-title border-top pt-3">${product.title}</div>
+//     <div class="d-flex align-items-center mb-2">
+//         <div class="text-warning">${stars}</div>
+//         <small class="text-muted ms-2">(${product.reviews} Reviews)</small>
+//     </div>
+//     <div class="mb-2">
+//         <span class="price">$${product.price}</span>
+//         <span class="price-original">$${product.originalPrice}</span>
+//         <span class="in-stock">${stockText}</span>
+//     </div>
+//     <div class="card-footer-btns mt-3">
+//         <button class="btn d-flex gap-2 px-4 btn-outline-secondary">
+//             <i class="bi bi-cart2 me-1"></i> Add_To_Cart
+//         </button>
+//         <button class="icon-btn"><i class="bi bi-heart"></i></button>
+//         <button class="icon-btn"><i class="bi bi-eye"></i></button>
+//     </div>
+// </div>
+// `;
+//   productList.insertAdjacentHTML("beforeend", cardHTML);
+// });
 
 // common
 function changeQty(val) {
@@ -105,7 +105,7 @@ function selectColor(elem) {
 }
 
 function changeMainImage(imgElem) {
-  document.getElementById("mainProductImg").src = imgElem.src;
+  document.getElementById("mainProductImg").src = imgElem?.src;
   document
     .querySelectorAll(".thumbnail-img")
     .forEach((img) => img.classList.remove("active-thumb"));

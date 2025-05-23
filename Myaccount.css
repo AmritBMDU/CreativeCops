@@ -1,0 +1,503 @@
+ /* left side button scc --  */
+/* Container style with shadow */
+.custom-nav {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Link style */
+.custom-nav .nav-link {
+  position: relative;
+  display: block;
+  color: #333;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  z-index: 1;
+}
+
+/* Outer border top and bottom lines */
+.custom-nav .nav-link::before,
+.custom-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: #007bff;
+  transition: width 0.4s ease;
+}
+
+.custom-nav .nav-link::before {
+  top: 0;
+  left: 0;
+}
+
+.custom-nav .nav-link::after {
+  bottom: 0;
+  right: 0;
+}
+
+/* On hover, animate horizontal lines */
+.custom-nav .nav-link:hover::before,
+.custom-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Vertical sides using extra span elements */
+.custom-nav .nav-link span::before,
+.custom-nav .nav-link span::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0%;
+  background-color: #007bff;
+  transition: height 0.4s ease;
+}
+
+.custom-nav .nav-link span::before {
+  top: 0;
+  left: 0;
+}
+
+.custom-nav .nav-link span::after {
+  bottom: 0;
+  right: 0;
+}
+
+.custom-nav .nav-link:hover span::before,
+.custom-nav .nav-link:hover span::after {
+  height: 100%;
+}
+
+/* Optional hover color change */
+.custom-nav .nav-link:hover {
+  background-color: #e9f3ff;
+  color: #007bff;
+}
+
+
+ /* End  */
+
+ /* ADD CSS WELLATE  POSION  */
+
+ .amount-button {
+            background-color: #e6f7ff;
+            border: none;
+            margin: 5px;
+            width: 80px;
+            height: 40px;
+            border-radius: 10px;
+            color: #00aaff;
+            font-weight: bold;
+        }
+
+        .withdraw-btn {
+            /* text-align: center; */
+            width: 50%;
+            border-radius: 25px;
+            padding: 10px;
+            background-color: #849bdf;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        .withdraw-btn span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .withdraw-btn span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .withdraw-btn:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .transaction-item img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .transaction-text {
+            margin-left: 10px;
+        }
+
+        .transaction-amount {
+            color: #3babe2;
+            font-weight: bold;
+        }
+
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+        }
+
+        .hover-underline-animation::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #0087ca;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover::after {
+            transform: scaleX(1);
+        }
+
+        .hover-underline-animation.left::after {
+            transform-origin: bottom right;
+        }
+
+ /* END  */
+
+ /* my ORder CSS Poison  */
+
+ /* Referral CSS  */
+  .earnings-box {
+      background: linear-gradient(to right, #78aee9, #bec5ee);
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .referral-code {
+      background-color: #f1f9ff;
+      border: 2px dashed #0096ff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .copy-text {
+      color: #00aaff;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .step-icon {
+      font-size: 1.8rem;
+      color: #007bff;
+    }
+
+    .referral-btn {
+      background: linear-gradient(to right, #5edcaa, #4fb3e3);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 30px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+ /* End  */
+
+  .faq-section {
+            max-width: 960px;
+            margin: 50px auto;
+        }
+
+        /* FAQ label on the top left */
+        .faq-label {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #465ea1;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+
+        .faq-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #465ea1;
+            border-color: #465ea1 #465ea1 #fff;
+            font-weight: 600;
+        }
+
+        .accordion-button::after {
+            content: '';
+            font-size: 1.5rem;
+            color: #465ea1;
+            font-weight: bold;
+            margin-left: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            content: '';
+            color: #465ea1;
+        }
+
+        .accordion-item {
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-contact {
+            background-color: #465ea1;
+            color: #fff;
+            padding: 10px 30px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            margin-top: 2rem;
+        }
+
+        .btn-contact:hover {
+            background-color: #465ea1;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: #465ea1;
+            color: white;
+        }
+ /* End  */
+
+  
+    .account-header {
+      background: linear-gradient(135deg, #465ea1, #5a9bfd);
+      color: white;
+      padding: 1.5rem;
+      /* border-bottom-left-radius: 20px; */
+      /* border-bottom-right-radius: 20px; */
+      width: 80%;
+      margin-left: 150px;
+    }
+
+    .middle {
+      width: 80%;
+    }
+
+    .profile-img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 70%;
+      border: 3px solid white;
+    }
+
+    .account-options i {
+      width: 25px;
+    }
+
+    .text {
+      align-items: center;
+    }
+
+    .account-options .list-group-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border: none;
+      border-bottom: 1px solid #dee2e6;
+      position: relative;
+      cursor: pointer;
+      transition: color 0.8s ease;
+    }
+
+    .account-options .list-group-item a {
+      color: black;
+    }
+
+    .account-options .list-group-item:hover {
+      text-decoration: underline;
+    }
+
+    .container-flex {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .left-panel {
+      width: 25%;
+      border-right: 1px solid #ddd;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .right-panel {
+      width: 100%;
+      /* padding: 20px; */
+    }
+
+    .list-group-item {
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .list-group-item:hover {
+      background-color: #e8f0fe;
+      transform: translateX(5px);
+      color: #0d6efd;
+    }
+
+    .list-group-item i {
+      margin-right: 10px;
+      transition: transform 0.3s;
+    }
+
+    .list-group-item:hover i {
+      transform: rotate(10deg) scale(1.2);
+    }
+
+    .profile-img {
+      border-radius: 50%;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a:hover {
+      color: #0d6efd;
+    }
+
+    .profile-box {
+       background-color: #f8f9fa;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      gap: 15px;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .card-grid .card {
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      text-align: center;
+      padding: 30px 15px;
+      transition: all 0.3s ease-in-out;
+      background-color: white;
+    }
+
+    .card-grid .card:hover {
+      box-shadow: 0 4px 12px rgba(120, 152, 223, 0.1);
+      transform: translateY(-3px);
+    }
+
+    .card-grid .card i {
+      font-size: 30px;
+      margin-bottom: 15px;
+      color: #6c63ff;
+    }
+
+    .edit-btn {
+      margin-left: auto;
+      transition: all 0.3s ease;
+    }
+
+
+   .edit-btn:hover {
+      background-color: #343a40;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .modal-content {
+      border-radius: 10px;
+      animation: slideIn 0.4s ease;
+    }
+    @keyframes slideIn {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Form Section CSS  */
+     /* Fade in animation for inputs and labels */
+    form .form-label,
+    form .form-control,
+    form .btn-group,
+    form button {
+      opacity: 0;
+      transform: translateY(20px);
+      animation-fill-mode: forwards;
+      animation-name: fadeInUp;
+      animation-duration: 0.6s;
+      animation-timing-function: ease-out;
+    }
+    form .form-label {
+      animation-delay: 0.1s;
+    }
+    form .form-control {
+      animation-delay: 0.2s;
+    }
+    form .btn-group {
+      animation-delay: 0.3s;
+    }
+    form button {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Button hover glow effect */
+    button.btn-primary {
+      transition: box-shadow 0.3s ease;
+    }
+    button.btn-primary:hover {
+      box-shadow: 0 0 12px rgba(13, 110, 253, 0.7);
+    }
+
+    /* Input focus glow */
+    .form-control:focus {
+      box-shadow: 0 0 8px rgba(13, 110, 253, 0.7);
+      border-color: #0d6efd;
+      transition: box-shadow 0.3s ease;
+      outline: none;
+    }
+    /* End  */
