@@ -114,7 +114,7 @@
 }
 
 .top-header .header-right-content .navbar-option-language .dropdown-toggle::after {
-	content: "\2304";
+	/* content: "\2304"; */
 	font-size: 20px;
 	margin-left: 5px;
 	margin-bottom: 5px;
@@ -191,7 +191,7 @@
 	content: "";
 	position: absolute;
 	top: 1px;
-	right: -1px;
+	right: -8px;
 	width: 1px;
 	height: 100%;
 	background-color: #dddddd;
@@ -3349,3 +3349,23 @@ Copy Right Area Style
 	margin: 0 auto;
 	padding: 20px;
 } */
+
+/*changes by Manav*/
+/* Language dropdown styling */
+  .language-dropdown {
+    max-height: 300px; /* scroll if too long */
+    overflow-y: auto;
+    width: 220px; /* keep it uniform */
+		scrollbar-width: none;
+  }
+
+  .language-dropdown .dropdown-item {
+    padding: 8px 12px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .language-dropdown .dropdown-item:hover {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }

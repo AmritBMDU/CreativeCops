@@ -59,21 +59,84 @@
             </ul>
           </div>
           <div class="col-lg-4">
-            <div class="header-right-content">
-              <ul>
-                <li>
-                  <!-- <a href="chatNotificationPage.html" style="color: #465ea1;"><i class="fa-solid fa-bell"> Offers -->
-                  </i></a>
-                  <a href="chatNotificationPage.html" style="color: #465ea1;"><i class="fa-solid fa-bell"></i>
-                    Offers</a>
-                </li>
-                <li>
-                  <span style="color: #465ea1;"><i class="bi bi-person-circle"></i></span>
-                  <a href="NewLogin.html">My Account</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+  <div class="header-right-content">
+    <ul style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 20px;">
+      
+            <li style="margin: 0; padding: 0;">
+              <style>
+                /* Hide Google Translate attribution */
+                .goog-logo-link,
+                .goog-te-gadget span,
+                .goog-te-gadget-simple .goog-te-menu-value span,
+                .goog-te-gadget-simple .goog-te-menu-value:before {
+                    display: none !important;
+                }
+                .goog-te-gadget {
+                    font-size: 0 !important;
+                }
+
+
+                /* Style dropdown like navbar */
+                #google_translate_element select {
+                  margin: 0;;
+                  background: #fff;
+                  color: #333;
+                  border: 1px solid #ccc;
+                  padding: 0 5px 0 5px;
+                  border-radius: 4px;
+                  font-size: 14px;
+                  font-family: Arial, sans-serif;
+                  height: 32px;
+                  line-height: 32px;
+                  cursor: pointer;
+                  outline: none;
+
+                  appearance: none;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='12' viewBox='0 0 24 24' width='12' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+                  background-repeat: no-repeat;
+                  background-position: right 8px center;
+                  background-size: 12px;
+                }
+                #google_translate_element select:hover {
+                  border-color: #465ea1;
+                }
+              </style>
+
+              <!-- Google Translate Dropdown -->
+              <div id="google_translate_element"></div>
+              <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement(
+                    {
+                      pageLanguage: 'en',
+                      includedLanguages:
+                        'en,hi,kn,ml,mr,ta,te,gu,bn,pa,or,sd,si,ur,ne'
+                    },
+                    'google_translate_element'
+                  );
+                }
+              </script>
+              <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </li>
+
+            <li style="margin: 0; padding: 0;">
+              <a href="chatNotificationPage.html" style="color: #465ea1;">
+                <i class="fa-solid fa-bell"></i> Offers
+              </a>
+            </li>
+
+            <li style="margin: 0; padding: 0;">
+              <a href="NewLogin.html" style="color: #465ea1;">
+                <i class="bi bi-person-circle"></i> My Account
+              </a>
+            </li>
+
+          </ul>
+        </div>
+</div>
+
         </div>
       </div>
     </div>
@@ -8439,6 +8502,107 @@
       </div>
     </div>
   </section>
+  <!-- FAQ Section -->
+<div class="container">
+  <div class="pb-5">
+  <div class="faq-header text-center mb-4">
+    <h2 class="fw-bold">Frequently Asked Questions</h2>
+    <p class="text-muted">Find answers to the most common questions below.</p>
+  </div>
+
+  <div class="accordion" id="faqAccordion">
+
+    <!-- Q1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeadingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+          1. What is Bootstrap and why should I use it?
+        </button>
+      </h2>
+      <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Bootstrap is a front-end framework for building responsive websites quickly with pre-styled components and a powerful grid system.
+        </div>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeadingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+          2. How do I install Bootstrap in my project?
+        </button>
+      </h2>
+      <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          You can install Bootstrap via CDN, npm, or by downloading its files. The easiest way is to use the official CDN links in your HTML.
+        </div>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeadingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+          3. Is Bootstrap mobile-friendly by default?
+        </button>
+      </h2>
+      <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes, Bootstrap is designed with mobile-first principles. Its responsive grid and utilities make websites look great on all devices.
+        </div>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeadingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+          4. Can I customize Bootstrap components?
+        </button>
+      </h2>
+      <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Absolutely! You can override Bootstrap styles with custom CSS or use SCSS for deeper customization.
+        </div>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeadingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+          5. Does Bootstrap work with all browsers?
+        </button>
+      </h2>
+      <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes, Bootstrap supports all modern browsers like Chrome, Firefox, Safari, and Edge. Internet Explorer support was dropped in Bootstrap 5.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- Minimal Styling -->
+<style>
+  .faq-section {
+    max-width: 800px;
+    margin: 50px auto;
+  }
+  .faq-header h2 {
+    font-size: 2rem;
+  }
+  .accordion-button {
+    font-weight: 600;
+  }
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+</style>
+
   <!-- Special Prodeuct End  -->
   <!-- Start Subscribe Area -->
   <section class="subscribe-area ptb-54">
@@ -8475,6 +8639,8 @@
       </div>
     </div>
   </section>
+
+  
   <!-- End Subscribe  Area -->
   <!-- Start Footer  Area -->
   <div class="footer-area mt-5 pt-54 pb-30">
@@ -8620,6 +8786,148 @@
       </p>
     </div>
   </div>
+
+
+  <div class="notification-container"></div>
+
+    <style>
+      /* Container */
+      .notification-container {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1055;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+      }
+
+      /* Popup */
+      .notification {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        padding: 10px 15px;
+        width: 320px;
+        animation: fadeInUp 0.5s ease;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+
+      .notification img {
+        width: 50px;
+        height: 50px;
+        border-radius: 4px;
+        margin-right: 12px;
+        object-fit: cover;
+      }
+
+      .notification .content {
+        flex: 1;
+      }
+
+      .notification .title {
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .notification .message {
+        font-size: 13px;
+        margin: 2px 0;
+      }
+
+      .notification .time {
+        font-size: 12px;
+        color: #888;
+      }
+
+      .notification .close-btn {
+        cursor: pointer;
+        margin-left: 8px;
+        color: #888;
+      }
+
+      /* Animation */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+
+    <script>
+      const notifications = [
+        {
+          img: "./AssetImage/customer-1.png",
+          title: "Talim from CHANDAULI",
+          message: "Purchased TrackX® Wired GPS",
+          time: "2 days ago",
+        },
+        {
+          img: "./AssetImage/customer-2.png",
+          title: "Rohit from DELHI",
+          message: "Ordered Vehicle Tracker Pro",
+          time: "1 day ago",
+        },
+      ];
+
+      function showNotification(data) {
+        const container = document.querySelector(".notification-container");
+
+        const popup = document.createElement("div");
+        popup.classList.add("notification");
+        popup.innerHTML = `
+    <img src="${data.img}" alt="product">
+    <div class="content">
+      <div class="title">${data.title}</div>
+      <div class="message">${data.message}</div>
+      <div class="time">${data.time}</div>
+    </div>
+    <span class="close-btn">&times;</span>
+  `;
+
+        popup.querySelector(".close-btn").addEventListener("click", () => {
+          popup.remove();
+        });
+
+        container.appendChild(popup);
+      }
+
+      function runNotificationCycle() {
+        // First popup after 10s
+        setTimeout(() => {
+          showNotification(notifications[0]);
+
+          // Second popup after 5s
+          setTimeout(() => {
+            showNotification(notifications[1]);
+
+            // Remove all after 10s
+            setTimeout(() => {
+              document.querySelectorAll(".notification").forEach((popup) => {
+                popup.style.opacity = "0";
+                popup.style.transform = "translateY(20px)";
+                setTimeout(() => popup.remove(), 500);
+              });
+
+              // Restart cycle after clearing
+              setTimeout(runNotificationCycle, 10000);
+            }, 10000);
+          }, 5000);
+        }, 10000);
+      }
+
+      // Start the loop
+      runNotificationCycle();
+    </script>
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -8801,6 +9109,7 @@
     });
 
   </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/js/all.min.js"></script>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
